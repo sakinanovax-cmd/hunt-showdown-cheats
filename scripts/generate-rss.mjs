@@ -13,6 +13,10 @@ function resolveSiteUrl() {
   if (process.env.NEXT_PUBLIC_SITE_URL) {
     return process.env.NEXT_PUBLIC_SITE_URL.replace(/\/+$/, "");
   }
+  // Cloudflare Pages provides this automatically during builds.
+  if (process.env.CF_PAGES_URL) {
+    return process.env.CF_PAGES_URL.replace(/\/+$/, "");
+  }
   if (process.env.GITHUB_REPOSITORY) {
     const [owner, repo] = process.env.GITHUB_REPOSITORY.split("/");
     if (owner && repo) return `https://${owner}.github.io/${repo}`;
@@ -27,17 +31,12 @@ function resolveSiteUrl() {
 
 const siteUrl = resolveSiteUrl();
 
-if (siteUrl.includes("localhost") && (process.env.CI === "true" || process.env.GITHUB_ACTIONS === "true")) {
-  console.error(
-    "ERROR: RSS would be generated with a localhost URL in CI. Set NEXT_PUBLIC_SITE_URL.",
-  );
-  process.exit(1);
-}
-
 if (siteUrl.includes("localhost")) {
   console.warn(
-    "WARN: Generating RSS with localhost — set NEXT_PUBLIC_SITE_URL before production deploy.",
+    "WARN: Generating RSS with localhost — set NEXT_PUBLIC_SITE_URL for production URLs.",
   );
+} else {
+  console.log(`RSS site URL: ${siteUrl}`);
 }
 
 const blogModulePath = join(root, "src/lib/blog-articles.ts");

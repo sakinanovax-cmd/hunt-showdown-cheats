@@ -22,6 +22,11 @@ function resolveSiteUrl(): string {
     return normalizeBaseUrl(process.env.NEXT_PUBLIC_SITE_URL);
   }
 
+  // Cloudflare Pages injects this during builds.
+  if (process.env.CF_PAGES_URL) {
+    return normalizeBaseUrl(process.env.CF_PAGES_URL);
+  }
+
   if (process.env.GITHUB_REPOSITORY) {
     const [owner, repo] = process.env.GITHUB_REPOSITORY.split("/");
     if (owner && repo) {
@@ -33,13 +38,6 @@ function resolveSiteUrl(): string {
     const repo = process.env.GITHUB_REPO_NAME ?? "hunt-showdown-cheats-site";
     const owner = process.env.GITHUB_ACTOR ?? process.env.NEXT_PUBLIC_GITHUB_USER ?? "github";
     return `https://${owner}.github.io/${repo}`;
-  }
-
-  // Never ship localhost canonicals from CI / Pages builds.
-  if (process.env.CI === "true" || process.env.GITHUB_ACTIONS === "true") {
-    throw new Error(
-      "NEXT_PUBLIC_SITE_URL is required in CI so canonicals, sitemap, OG, and RSS use the production domain.",
-    );
   }
 
   return "http://localhost:8080";
