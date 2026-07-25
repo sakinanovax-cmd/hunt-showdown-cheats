@@ -1,1 +1,2 @@
-public/videos/*.mp4 filter=lfs diff=lfs merge=lfs -text
+# Video files are kept as normal Git blobs (compressed under Cloudflare's 25 MiB limit).
+# Do not track them with Git LFS — Cloudflare builds often mishandle LFS leftovers.
