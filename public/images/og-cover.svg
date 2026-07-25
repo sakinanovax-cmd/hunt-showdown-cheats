@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#060409"/>
+  <defs>
+    <radialGradient id="g" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#060409" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#g)"/>
+  <text x="600" y="280" text-anchor="middle" fill="#a855f7" font-family="DM Sans,sans-serif" font-weight="700" font-size="48" letter-spacing="3">HUNT: SHOWDOWN CHEATS</text>
+  <text x="600" y="340" text-anchor="middle" fill="#f0ecff" font-family="DM Sans,sans-serif" font-weight="600" font-size="26">ESP, AIMBOT &amp; WALLHACK</text>
+  <text x="600" y="400" text-anchor="middle" fill="#71717a" font-family="DM Sans,sans-serif" font-size="18">Zadeyo</text>
+</svg>

@@ -1,0 +1,19 @@
+{
+  "name": "Hunt Showdown Cheats — Zadeyo",
+  "short_name": "HS Cheats",
+  "description": "Buy Hunt Showdown cheats — ESP, aimbot, wallhack & radar. $35/mo or $150 lifetime. Guides, price pages & Zadeyo checkout.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "lang": "en-US",
+  "background_color": "#060409",
+  "theme_color": "#060409",
+  "icons": [
+    {
+      "src": "/images/zadeyo/zadeyo-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
