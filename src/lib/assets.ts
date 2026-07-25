@@ -1,9 +1,10 @@
 /** Media sourced from https://zadeyo.com/products/hunt-showdown-cheats */
 export const ZADEYO_ASSETS = {
-  logo: "/images/zadeyo/logo.png",
+  /** Official Zadeyo "Z" mark (also used for Google Search / favicon). */
+  logo: "/images/zadeyo/google-logo.png",
   gameCover: "/images/zadeyo/game-cover.jpg",
   screenshotBanner: "/images/zadeyo/screenshot-banner.png",
-  icon: "/images/zadeyo/zadeyo-512.png",
+  icon: "/images/zadeyo/google-logo.png",
 } as const;
 
 /** Official Hunt: Showdown imagery provided for the site */

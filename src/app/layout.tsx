@@ -8,8 +8,12 @@ import "./globals.css";
 export const metadata: Metadata = {
   ...defaultMetadata,
   icons: {
-    icon: "/images/zadeyo/zadeyo-512.png",
-    apple: "/images/zadeyo/zadeyo-512.png",
+    icon: [
+      { url: "/favicon.png", type: "image/png" },
+      { url: "/images/zadeyo/google-logo.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: "/images/zadeyo/google-logo.png",
+    shortcut: "/favicon.png",
   },
   manifest: "/manifest.webmanifest",
 };

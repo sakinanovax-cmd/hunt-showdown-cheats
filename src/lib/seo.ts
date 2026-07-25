@@ -51,13 +51,22 @@ export function toJsonLdGraph(schemas: Record<string, unknown>[]): Record<string
 }
 
 export function getOrganizationSchema() {
+  const logoUrl = getAbsoluteAssetUrl("/images/zadeyo/google-logo.png");
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: `${SITE_PRIMARY_KEYWORD} — ${SITE_NAME}`,
     url: getCanonicalUrl("/"),
-    logo: getAbsoluteAssetUrl("/images/zadeyo/zadeyo-512.png"),
-    sameAs: [ZADEYO_CHECKOUT_URL],
+    logo: {
+      "@type": "ImageObject",
+      url: logoUrl,
+      contentUrl: logoUrl,
+      width: 512,
+      height: 512,
+      caption: `${SITE_NAME} logo`,
+    },
+    image: logoUrl,
+    sameAs: [ZADEYO_CHECKOUT_URL, "https://zadeyo.com/"],
   };
 }
 
@@ -207,7 +216,9 @@ export function getArticleSchema(article: {
       name: SITE_NAME,
       logo: {
         "@type": "ImageObject",
-        url: getAbsoluteAssetUrl("/images/zadeyo/zadeyo-512.png"),
+        url: getAbsoluteAssetUrl("/images/zadeyo/google-logo.png"),
+        width: 512,
+        height: 512,
       },
     },
     mainEntityOfPage: { "@type": "WebPage", "@id": getCanonicalUrl(`/blog/${article.slug}/`) },
