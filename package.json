@@ -8,6 +8,8 @@
     "generate:rss": "node scripts/generate-rss.mjs",
     "prebuild": "node scripts/generate-rss.mjs",
     "build": "next build",
+    "postbuild": "node scripts/ensure-cf-asset-limits.mjs",
+    "compress:videos": "node scripts/compress-videos-for-cf.mjs",
     "build:gh-pages": "cross-env GITHUB_PAGES=true next build",
     "deploy": "npx wrangler deploy",
     "start": "next start",
@@ -28,6 +30,7 @@
     "cross-env": "^7.0.3",
     "eslint": "^9",
     "eslint-config-next": "16.2.10",
+    "ffmpeg-static": "^5.3.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }
