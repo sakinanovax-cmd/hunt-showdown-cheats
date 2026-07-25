@@ -9,6 +9,7 @@
     "prebuild": "node scripts/generate-rss.mjs",
     "build": "next build",
     "build:gh-pages": "cross-env GITHUB_PAGES=true next build",
+    "deploy": "npx wrangler deploy",
     "start": "next start",
     "lint": "eslint"
   },
