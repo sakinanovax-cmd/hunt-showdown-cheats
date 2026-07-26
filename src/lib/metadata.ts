@@ -82,7 +82,7 @@ export const defaultMetadata: Metadata = {
   alternates: {
     canonical: getCanonicalUrl("/"),
     languages: {
-      "en-US": getCanonicalUrl("/"),
+      en: getCanonicalUrl("/"),
       "x-default": getCanonicalUrl("/"),
     },
     types: {
@@ -128,7 +128,7 @@ export function buildPageMetadata({
     alternates: {
       canonical,
       languages: {
-        "en-US": canonical,
+        en: canonical,
         "x-default": canonical,
       },
     },

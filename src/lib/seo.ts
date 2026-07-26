@@ -78,7 +78,7 @@ export function getWebSiteSchema() {
     alternateName: ["Zadeyo Hunt Showdown Cheats", "Hunt Showdown Cheats Zadeyo"],
     url: getCanonicalUrl("/"),
     description: SITE_SEO_DESCRIPTION,
-    inLanguage: "en-US",
+    inLanguage: "en",
     publisher: { "@type": "Organization", name: SITE_NAME, url: getCanonicalUrl("/") },
   };
 }
@@ -98,7 +98,7 @@ export function getWebPageSchema({
     name,
     description,
     url: getCanonicalUrl(path),
-    inLanguage: "en-US",
+    inLanguage: "en",
     isPartOf: { "@type": "WebSite", url: getCanonicalUrl("/"), name: SITE_PRODUCT_NAME },
     about: { "@type": "Product", name: SITE_PRODUCT_NAME },
   };
@@ -205,7 +205,7 @@ export function getArticleSchema(article: {
     description: BLOG_META_DESCRIPTIONS[article.slug] ?? article.excerpt,
     datePublished: article.publishedAt,
     dateModified,
-    inLanguage: "en-US",
+    inLanguage: "en",
     author: {
       "@type": "Organization",
       name: SITE_NAME,

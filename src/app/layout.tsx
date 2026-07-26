@@ -22,7 +22,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en-US" className="h-full">
+    <html lang="en" className="h-full">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
@@ -33,7 +33,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://zadeyo.com" />
         <link rel="dns-prefetch" href="https://zadeyo.com" />
         <meta name="geo.region" content="US" />
-        <meta name="language" content="English" />
+        <meta httpEquiv="content-language" content="en" />
       </head>
       <body className="min-h-full flex flex-col antialiased">
         <JsonLd data={[getOrganizationSchema(), getWebSiteSchema()]} />
