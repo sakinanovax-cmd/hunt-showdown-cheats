@@ -10,7 +10,7 @@ export default function HeroBackground() {
         <div className="hero-bg-video-zoom">
           <Image
             src={HERO_BACKGROUND}
-            alt=""
+            alt="Hunt Showdown bayou night atmosphere for cheats landing hero"
             fill
             priority
             sizes="100vw"

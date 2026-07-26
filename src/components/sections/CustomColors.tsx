@@ -13,7 +13,7 @@ export default function CustomColors() {
         <div className="mx-auto max-w-2xl">
           <div className="card-surface p-8 text-center">
             <Palette className="mx-auto mb-4 text-[var(--color-purple)]" size={32} />
-            <h3 className="mb-3 text-lg font-semibold">Customizable ESP Colors</h3>
+            <p className="mb-3 text-lg font-semibold">Customizable ESP Colors</p>
             <p className="text-[var(--color-text-secondary)] leading-relaxed">
               Tune every ESP color to stay readable in bayou fog, torch light, or crowded compound fights.
             </p>

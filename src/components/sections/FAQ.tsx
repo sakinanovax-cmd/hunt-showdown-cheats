@@ -55,8 +55,9 @@ export default function FAQ({
                   isOpen ? "shadow-[0_0_32px_rgba(168,85,247,0.12)]" : ""
                 }`}
               >
-                <h3 className="m-0">
+                <div className="m-0">
                   <button
+                    type="button"
                     className="flex w-full items-center justify-between gap-4 p-5 text-left"
                     onClick={() => setOpenIndex(isOpen ? null : index)}
                     aria-expanded={isOpen}
@@ -69,9 +70,10 @@ export default function FAQ({
                       className={`shrink-0 text-[var(--color-purple)] transition-transform ${
                         isOpen ? "rotate-180" : ""
                       }`}
+                      aria-hidden="true"
                     />
                   </button>
-                </h3>
+                </div>
                 <div
                   className="accordion-content"
                   data-open={isOpen}
@@ -93,7 +95,7 @@ export default function FAQ({
               href="/faq/"
               className="text-sm font-medium text-[var(--color-purple-light)] underline-offset-2 hover:underline"
             >
-              View all FAQs on the FAQ page →
+              More FAQ answers
             </Link>
           </p>
         )}

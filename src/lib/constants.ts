@@ -88,7 +88,7 @@ export const PRODUCT_INFO: InfoSection = {
   paragraphs: [
     "Zadeyo Hunt: Showdown cheat software includes ESP for player and loot visibility, aimbot with adjustable settings, triggerbot, customizable recoil control, and radar with real-time enemy tracking.",
     "Movement speed adjustments, silent aim, and stream-proof mode keep overlays invisible to OBS and common capture tools. Cloud DMA support works with HVCI, Core Isolation, TPM, and Secure Boot enabled.",
-    "Pricing starts at $35/month for 31 days of access, or $150 lifetime for unlimited access. Instant delivery after checkout — Zadeyo is not affiliated with Crytek or Hunt: Showdown.",
+    "Pricing starts at $35/month for 31 days of access, or $150 lifetime for unlimited access, with instant loader delivery after checkout.",
   ],
 };
 
@@ -334,24 +334,25 @@ export const FOOTER_SETUP_TAGS = [
 
 export const FOOTER_LINKS = {
   shop: [
-    { label: "All Hunt Showdown Cheats", href: "/cheats/" },
-    { label: "ESP Cheat", href: "/cheats/esp/" },
-    { label: "Aimbot Cheat", href: "/cheats/aimbot/" },
-    { label: "Wallhack Cheat", href: "/cheats/wallhack/" },
-    { label: "Radar Cheat", href: "/cheats/radar/" },
-    { label: "Compare Best Cheats 2026", href: "/compare/" },
-    { label: "Hunt Showdown Cheats FAQ", href: "/faq/" },
-    { label: "Cheat Demo Video", href: "/video/" },
-    { label: "Buy Hunt Showdown Cheats", href: ZADEYO_CHECKOUT_URL },
-    { label: "Cheat Price", href: "/buy/" },
+    { label: "All cheats", href: "/cheats/" },
+    { label: "ESP", href: "/cheats/esp/" },
+    { label: "Aimbot", href: "/cheats/aimbot/" },
+    { label: "Wallhack", href: "/cheats/wallhack/" },
+    { label: "Radar", href: "/cheats/radar/" },
+    { label: "Compare", href: "/compare/" },
+    { label: "Help answers", href: "/faq/" },
+    { label: "Demo video", href: "/video/" },
+    { label: "Pricing", href: "/buy/" },
   ],
-  guides: BLOG_ARTICLES.map((a) => ({
-    label: a.title,
-    href: `/blog/${a.slug}/`,
-  })),
+  guides: [
+    { label: "ESP guide", href: "/blog/hunt-showdown-esp-guide/" },
+    { label: "Radar guide", href: "/blog/radar-and-map-awareness/" },
+    { label: "Cloud DMA guide", href: "/blog/cloud-dma-explained/" },
+    { label: "Anti-cheat safety", href: "/blog/hunt-showdown-anti-cheat-analysis/" },
+  ],
   trust: [
-    { label: "Hunt Showdown cheat product info", href: "/#product-info" },
-    { label: "Cloud DMA setup guide", href: "/blog/cloud-dma-explained/" },
-    { label: "Official Zadeyo product page", href: ZADEYO_CHECKOUT_URL },
+    { label: "Product details", href: "/#product-info" },
+    { label: "DMA setup", href: "/blog/cloud-dma-explained/" },
+    { label: "Zadeyo store", href: ZADEYO_CHECKOUT_URL },
   ],
 };

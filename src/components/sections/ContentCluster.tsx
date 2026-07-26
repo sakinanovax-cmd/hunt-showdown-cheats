@@ -18,7 +18,7 @@ export default function ContentCluster() {
         />
         <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-3">
           <div className="card-surface p-6 md:col-span-1">
-            <h3 className="display-heading mb-3 text-lg text-[var(--color-purple-light)]">Hub</h3>
+            <p className="display-heading mb-3 text-lg text-[var(--color-purple-light)]">Hub</p>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link href="/" className="text-[var(--color-text-secondary)] hover:text-[var(--color-purple-light)]">
@@ -38,7 +38,7 @@ export default function ContentCluster() {
             </ul>
           </div>
           <div className="card-surface p-6 md:col-span-1">
-            <h3 className="display-heading mb-3 text-lg text-[var(--color-purple-light)]">Guides</h3>
+            <p className="display-heading mb-3 text-lg text-[var(--color-purple-light)]">Guides</p>
             <ul className="space-y-2 text-sm">
               {guides.map((article) => (
                 <li key={article.slug}>
@@ -53,7 +53,7 @@ export default function ContentCluster() {
             </ul>
           </div>
           <div className="card-surface p-6 md:col-span-1">
-            <h3 className="display-heading mb-3 text-lg text-[var(--color-purple-light)]">Buy</h3>
+            <p className="display-heading mb-3 text-lg text-[var(--color-purple-light)]">Buy</p>
             <ul className="space-y-2 text-sm">
               <li>
                 <a

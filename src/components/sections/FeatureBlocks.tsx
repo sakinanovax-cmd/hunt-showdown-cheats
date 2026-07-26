@@ -12,7 +12,7 @@ export default function FeatureBlocks() {
             <SectionHeading eyebrow={block.eyebrow} heading={block.heading} />
             <div className="mx-auto grid max-w-5xl gap-10 lg:grid-cols-2 lg:items-center">
               <div className="space-y-6 text-center lg:text-left">
-                <h3 className="text-xl font-semibold text-[var(--color-purple-light)]">{block.subheading}</h3>
+                <p className="text-xl font-semibold text-[var(--color-purple-light)]">{block.subheading}</p>
                 <p className="text-[var(--color-text-secondary)] leading-relaxed md:text-lg">{block.description}</p>
                 <p className="text-sm text-[var(--color-text-muted)] leading-relaxed">{block.extra}</p>
               </div>

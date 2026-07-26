@@ -30,7 +30,7 @@ export default function EnemyVisuals() {
         <div className="mb-12 text-center">
           <p className="section-label mb-4">Player awareness</p>
           <div className="section-title-wrap">
-            <h2 className="ref-section-title">Enemy Visuals</h2>
+            <p className="ref-section-title">Enemy Visuals</p>
           </div>
           <p className="prose-body mx-auto mt-6 max-w-2xl">
             Hunt Showdown ESP cheat features for player awareness — boxes, distance tags, health bars,
@@ -46,7 +46,7 @@ export default function EnemyVisuals() {
                 <div className="premium-card-icon transition-transform duration-300 group-hover:scale-105">
                   <Icon size={20} aria-hidden="true" />
                 </div>
-                <h3 className="ref-card-title mb-2 text-[var(--color-text)]">{feature.title}</h3>
+                <p className="ref-card-title mb-2 text-[var(--color-text)]">{feature.title}</p>
                 <p className="text-sm leading-relaxed text-[var(--color-text-secondary)]">
                   {feature.description}
                 </p>
@@ -58,7 +58,7 @@ export default function EnemyVisuals() {
         <p className="mt-10 text-center text-sm text-[var(--color-text-muted)]">
           Each feature has its own page —{" "}
           <Link href="/cheats/" className="text-[var(--color-purple-light)] transition-colors hover:text-[var(--color-text)]">
-            browse all cheats
+            ESP feature pages
           </Link>
           {" · "}
           <a
@@ -67,7 +67,7 @@ export default function EnemyVisuals() {
             rel="noopener noreferrer"
             target="_blank"
           >
-            view price &amp; buy
+            checkout pricing
           </a>
         </p>
       </div>

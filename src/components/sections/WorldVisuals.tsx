@@ -26,9 +26,9 @@ export default function WorldVisuals() {
         <div className="mb-12 text-center">
           <p className="section-label mb-4">Map intelligence</p>
           <div className="section-title-wrap">
-            <h2 className="ref-section-title">
+            <p className="ref-section-title">
               World Visuals — Items, Extracts, Bosses, Traps &amp; Supplies
-            </h2>
+            </p>
           </div>
           <p className="mx-auto mt-6 max-w-2xl text-[var(--color-text-secondary)] leading-relaxed">
             Hunt Showdown cheats for bounty extraction — loot ESP, extract markers, boss tracking,
@@ -48,7 +48,7 @@ export default function WorldVisuals() {
                   <Icon size={20} aria-hidden="true" />
                 </div>
                 <div>
-                  <h3 className="ref-card-title mb-1.5 text-[var(--color-text)]">{feature.title}</h3>
+                  <p className="ref-card-title mb-1.5 text-[var(--color-text)]">{feature.title}</p>
                   <p className="text-sm leading-relaxed text-[var(--color-text-secondary)]">
                     {feature.description}
                   </p>
@@ -69,7 +69,7 @@ export default function WorldVisuals() {
           </Link>
           {" · "}
           <Link href="/cheats/" className="text-[var(--color-purple-light)] hover:text-[var(--color-text)]">
-            all cheats
+            cheats index
           </Link>
         </p>
       </div>

@@ -41,26 +41,24 @@ export default function SeoIntro() {
             third-party tool; keep loaders updated after Crytek patches and read the safety notes before you play.
           </p>
           <nav aria-label="Hunt Showdown cheats quick links" className="flex flex-col items-center justify-center gap-4 sm:flex-row sm:flex-wrap">
-            <PurchaseButton>Buy Hunt Showdown Cheats</PurchaseButton>
+            <PurchaseButton>Get the cheat suite</PurchaseButton>
             <Link
               href="/cheats/"
               className="text-sm font-medium text-[var(--color-text-secondary)] underline-offset-2 hover:text-[var(--color-purple-light)] hover:underline"
             >
-              All cheats
+              Cheat features
             </Link>
-            <a
-              href={ZADEYO_CHECKOUT_URL}
+            <Link
+              href="/buy/"
               className="text-sm font-medium text-[var(--color-text-secondary)] underline-offset-2 hover:text-[var(--color-purple-light)] hover:underline"
-              rel="noopener noreferrer"
-              target="_blank"
             >
-              Price &amp; buy
-            </a>
+              Plans &amp; pricing
+            </Link>
             <Link
               href="/faq/"
               className="text-sm font-medium text-[var(--color-text-secondary)] underline-offset-2 hover:text-[var(--color-purple-light)] hover:underline"
             >
-              FAQ
+              Common questions
             </Link>
             <Link
               href="/blog/"

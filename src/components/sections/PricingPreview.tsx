@@ -8,9 +8,9 @@ export default function PricingPreview() {
     <section id="pricing" className="border-t border-[var(--color-border-subtle)] py-[var(--section-py)] bg-[var(--color-surface)]" aria-labelledby="pricing-heading">
       <div className="container-dnd">
         <p className="section-label mb-3 text-center">Price</p>
-        <h2 id="pricing-heading" className="ref-section-title mb-4 text-center">
+        <p id="pricing-heading" className="ref-section-title mb-4 text-center">
           Hunt Showdown Cheats — Plans &amp; Price
-        </h2>
+        </p>
         <p className="prose-body mx-auto mb-10 max-w-2xl text-center">
           Buy Hunt Showdown cheats on Zadeyo — monthly or lifetime access with full ESP, aimbot, wallhack,
           radar, and Cloud DMA. Instant loader delivery after checkout.
@@ -24,9 +24,9 @@ export default function PricingPreview() {
               {plan.popular && (
                 <span className="badge-pill mb-4">Best value</span>
               )}
-              <h3 className="ref-card-title mb-1 text-[var(--color-purple-light)]">
+              <p className="ref-card-title mb-1 text-[var(--color-purple-light)]">
                 Hunt Showdown Cheats — {plan.name}
-              </h3>
+              </p>
               <p className="mb-4 text-sm text-[var(--color-text-muted)]">{plan.duration}</p>
               <p className="font-display mb-6 text-4xl text-[var(--color-text)]">{plan.price}</p>
               <ul className="mb-6 space-y-2">

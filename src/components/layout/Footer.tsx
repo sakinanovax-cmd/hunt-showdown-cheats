@@ -2,7 +2,7 @@ import Link from "next/link";
 import FooterSetupMarquee from "@/components/layout/FooterSetupMarquee";
 import { FOOTER_LINKS } from "@/lib/constants";
 import {
-  DISCLAIMER,
+  FOOTER_LEGAL,
   LAST_CONTENT_REVIEW,
   SITE_NAME,
   ZADEYO_CHECKOUT_URL,
@@ -27,11 +27,11 @@ export default function Footer() {
             </p>
           </div>
           <div>
-            <h3 className="font-mono-label mb-4 text-[var(--color-text)]">Shop</h3>
+            <p className="font-mono-label mb-4 text-[var(--color-text)]">Shop</p>
             <ul className="space-y-3">
               <li>
                 <Link href="/" className="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text)]">
-                  Hunt Showdown Cheats home
+                  Home
                 </Link>
               </li>
               {FOOTER_LINKS.shop.map((link) => (
@@ -54,7 +54,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="font-mono-label mb-4 text-[var(--color-text)]">Guides</h3>
+            <p className="font-mono-label mb-4 text-[var(--color-text)]">Guides</p>
             <ul className="space-y-3">
               {FOOTER_LINKS.guides.slice(0, 4).map((link) => (
                 <li key={link.href}>
@@ -66,7 +66,7 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="font-mono-label mb-4 text-[var(--color-text)]">Trust</h3>
+            <p className="font-mono-label mb-4 text-[var(--color-text)]">Trust</p>
             <ul className="space-y-3">
               {FOOTER_LINKS.trust.map((link) => (
                 <li key={link.href}>
@@ -97,7 +97,7 @@ export default function Footer() {
               RSS
             </a>
           </p>
-          <p>{DISCLAIMER}</p>
+          <p>{FOOTER_LEGAL}</p>
         </div>
       </div>
     </footer>

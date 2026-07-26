@@ -12,7 +12,7 @@ export default function BlogPreview() {
         <div className="mb-10 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="section-label mb-3">Latest articles</p>
-            <h2 className="ref-section-title">Hunt Showdown Guides &amp; Tips</h2>
+            <p className="ref-section-title">Hunt Showdown Guides &amp; Tips</p>
             <p className="mt-4 max-w-2xl text-[var(--color-text-secondary)] leading-relaxed">
               Explore practical Hunt Showdown guides, gameplay strategies, technical explainers,
               and the latest product updates.
@@ -22,7 +22,7 @@ export default function BlogPreview() {
             href="/blog/"
             className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-purple-light)] transition-colors hover:text-[var(--color-text)]"
           >
-            View all articles
+            Browse the blog
             <ArrowRight size={16} aria-hidden="true" />
           </Link>
         </div>

@@ -27,12 +27,12 @@ export default function CheatCard({ cheat }: { cheat: CheatProduct }) {
           </span>
           <span className="font-mono-label text-[var(--color-text-muted)]">from {PRICE_MONTHLY}</span>
         </div>
-        <h3 className="ref-card-title mb-2 text-[var(--color-text)] transition-colors group-hover:text-[var(--color-purple-light)]">
+        <p className="ref-card-title mb-2 text-[var(--color-text)] transition-colors group-hover:text-[var(--color-purple-light)]">
           {cheat.name}
-        </h3>
+        </p>
         <p className="mb-5 text-sm leading-relaxed text-[var(--color-text-secondary)]">{cheat.tagline}</p>
         <span className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--color-purple-light)]">
-          View cheat &amp; buy
+          Open {cheat.shortName} page
           <ArrowRight size={14} className="transition-transform group-hover:translate-x-1" aria-hidden="true" />
         </span>
       </div>

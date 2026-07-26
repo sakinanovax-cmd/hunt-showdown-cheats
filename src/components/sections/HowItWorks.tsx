@@ -15,9 +15,9 @@ export default function HowItWorks() {
           {HOW_IT_WORKS.map((step) => (
             <div key={step.number} className="card-surface p-8 text-center">
               <p className="step-number mb-4">{step.number}</p>
-              <h3 className="display-heading mb-4 text-lg text-[var(--color-text)]">
+              <p className="display-heading mb-4 text-lg text-[var(--color-text)]">
                 {step.title}
-              </h3>
+              </p>
               <p className="text-sm leading-relaxed text-[var(--color-text-secondary)]">
                 {step.description}
               </p>

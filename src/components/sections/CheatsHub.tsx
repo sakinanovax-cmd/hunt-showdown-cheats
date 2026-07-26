@@ -28,7 +28,7 @@ export default function CheatsHub() {
             href="/cheats/"
             className="inline-flex shrink-0 items-center justify-center rounded-full border border-[var(--color-border)] px-6 py-3 text-sm font-semibold text-[var(--color-purple-light)] transition-colors hover:border-[var(--color-purple)] hover:bg-[rgba(168,85,247,0.08)]"
           >
-            View all 9 cheats →
+            Full cheats hub
           </Link>
         </div>
 

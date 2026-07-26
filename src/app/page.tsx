@@ -3,7 +3,6 @@ import JsonLd from "@/components/seo/JsonLd";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
-import GameplayGallery from "@/components/sections/GameplayGallery";
 import WhyChoose from "@/components/sections/WhyChoose";
 import VideoShowcase from "@/components/sections/VideoShowcase";
 import EnemyVisuals from "@/components/sections/EnemyVisuals";
@@ -54,7 +53,6 @@ export default function HomePage() {
         <Hero />
         <SeoIntro />
         <WhyChoose />
-        <GameplayGallery />
         <EnemyVisuals />
         <WorldVisuals />
         <CheatsHub />

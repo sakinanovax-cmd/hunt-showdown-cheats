@@ -17,9 +17,9 @@ export default function TrustGrid() {
                   <Icon className="text-[var(--color-purple)]" size={22} />
                   <p className="section-label">{section.eyebrow}</p>
                 </div>
-                <h3 className="display-heading mb-4 text-xl text-[var(--color-text)]">
+                <p className="display-heading mb-4 text-xl text-[var(--color-text)]">
                   {section.heading}
-                </h3>
+                </p>
                 <div className="space-y-4">
                   {section.paragraphs.map((p, i) => (
                     <p

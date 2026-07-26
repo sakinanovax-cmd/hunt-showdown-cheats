@@ -11,9 +11,9 @@ export default function VideoShowcase() {
           <div className="mb-10 text-center">
             <p className="section-label mb-4">Gameplay gallery</p>
             <div className="section-title-wrap">
-              <h2 id="showcase-heading" className="ref-section-title">
+              <p id="showcase-heading" className="ref-section-title">
                 Hunt Showdown Cheats — In-Game Screenshots
-              </h2>
+              </p>
             </div>
           </div>
 
@@ -42,12 +42,12 @@ export default function VideoShowcase() {
 
           <p className="mt-8 text-center">
             <Link href="/cheats/" className="text-sm font-medium text-[var(--color-purple-light)] hover:underline">
-              Browse every cheat page with price &amp; buy links →
+              See full cheat list
             </Link>
           </p>
 
           <div className="mt-12 space-y-6 rounded-2xl border border-[var(--color-border)] bg-[rgba(168,85,247,0.06)] p-8 text-center backdrop-blur-sm">
-            <h3 className="ref-card-title text-[var(--color-text)]">{PRODUCT_INFO.heading}</h3>
+            <p className="ref-card-title text-[var(--color-text)]">{PRODUCT_INFO.heading}</p>
             {PRODUCT_INFO.paragraphs.map((p, i) => (
               <p key={i} className="prose-body mx-auto max-w-3xl">
                 {p}

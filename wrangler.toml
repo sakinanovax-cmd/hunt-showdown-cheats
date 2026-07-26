@@ -1,8 +1,10 @@
 # Cloudflare Workers static assets (Next.js `output: "export"` → ./out)
 name = "hunt-showdown-cheats"
 compatibility_date = "2025-07-25"
+main = "worker.js"
 
 [assets]
 directory = "./out"
+binding = "ASSETS"
 not_found_handling = "404-page"
 html_handling = "auto-trailing-slash"

@@ -1,11 +1,11 @@
 import Link from "next/link";
 
 const HUB_PAGES = [
-  { href: "/cheats/", label: "Cheats", key: "cheats" as const },
-  { href: "/buy/", label: "Buy", key: "buy" as const },
-  { href: "/compare/", label: "Compare", key: "compare" as const },
-  { href: "/faq/", label: "FAQ", key: "faq" as const },
-  { href: "/video/", label: "Video", key: "video" as const },
+  { href: "/cheats/", label: "Cheats hub", key: "cheats" as const },
+  { href: "/buy/", label: "Buy plans", key: "buy" as const },
+  { href: "/compare/", label: "Compare tools", key: "compare" as const },
+  { href: "/faq/", label: "FAQ hub", key: "faq" as const },
+  { href: "/video/", label: "Video demo", key: "video" as const },
 ];
 
 type HubKey = (typeof HUB_PAGES)[number]["key"];

@@ -119,7 +119,7 @@ export default function VideoPage() {
             <p className="prose-body mb-8 max-w-3xl text-[var(--color-text-secondary)]">
               This demo is for hunters researching ESP, aimbot, wallhack, and radar before purchase.
               Footage is illustrative — loader menus and overlay colors can change after Crytek patches.
-              Zadeyo is not affiliated with Crytek or Hunt: Showdown; all cheat software carries ban risk.
+              Treat every third-party overlay as high-risk software and update after patches.
             </p>
             <div className="grid gap-6 md:grid-cols-3">
               {VIDEO_FEATURE_BEATS.map((beat) => (

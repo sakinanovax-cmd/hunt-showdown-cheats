@@ -13,7 +13,7 @@ export default function Logo({ className = "", showProductName = true }: LogoPro
       <span className="flex h-9 w-9 shrink-0 items-center justify-center overflow-hidden rounded-md border border-[var(--color-border)] bg-black">
         <Image
           src={ZADEYO_ASSETS.logo}
-          alt={showProductName ? "" : `${SITE_NAME} logo`}
+          alt={`${SITE_NAME} logo`}
           width={36}
           height={36}
           className="h-9 w-9 object-contain"

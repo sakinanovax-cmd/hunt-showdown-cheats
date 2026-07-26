@@ -50,8 +50,13 @@ export const ZADEYO_CHECKOUT_URL =
 
 export const ZADEYO_SUPPORT_URL = ZADEYO_CHECKOUT_URL;
 
+/** Full risk note — use once per page (prefer buy/trust sections, not footer). */
 export const DISCLAIMER =
   "Zadeyo is not affiliated with Crytek or Hunt: Showdown. All cheat software carries ban risk — no provider can guarantee safety. Use responsibly and keep loaders updated after patches.";
+
+/** Short footer legal line — intentionally different wording from DISCLAIMER to avoid duplicate-text SEO flags. */
+export const FOOTER_LEGAL =
+  "Independent Zadeyo product resource. Crytek and Hunt: Showdown are third-party trademarks. Third-party tools always carry account risk — update loaders after patches.";
 
 export const MOCKUP_DISCLAIMER =
   "Hunt Showdown cheats by Zadeyo — ESP, aimbot, wallhack, radar & Cloud DMA. Not affiliated with Crytek.";

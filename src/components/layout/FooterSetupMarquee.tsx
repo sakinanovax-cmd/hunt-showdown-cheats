@@ -65,9 +65,9 @@ export default function FooterSetupMarquee() {
   return (
     <section className="footer-setup-band" aria-labelledby="footer-setup-heading">
       <div className="container-dnd mb-10 md:mb-12">
-        <h2 id="footer-setup-heading" className="footer-setup-title">
+        <p id="footer-setup-heading" className="footer-setup-title">
           Built for your setup.
-        </h2>
+        </p>
       </div>
 
       <div className="footer-marquee-stack space-y-3 md:space-y-4">

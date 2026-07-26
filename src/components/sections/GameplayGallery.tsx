@@ -22,7 +22,7 @@ export default function GameplayGallery() {
         <div className="mb-12 text-center">
           <p className="section-label mb-4">In-game visuals</p>
           <div className="section-title-wrap">
-            <h2 className="ref-section-title">Hunt Showdown — Real Gameplay</h2>
+            <p className="ref-section-title">Hunt Showdown — Real Gameplay</p>
           </div>
           <p className="prose-body mx-auto mt-6 max-w-2xl">
             Bayou atmosphere, ESP overlays, and the kind of hunter awareness Zadeyo cheats are built for.
@@ -57,7 +57,7 @@ export default function GameplayGallery() {
             className="inline-flex items-center gap-2 rounded-full border border-[var(--color-border)] bg-[rgba(168,85,247,0.08)] px-5 py-2.5 text-sm font-medium text-[var(--color-purple-light)] backdrop-blur-sm transition-colors hover:border-[var(--color-purple)] hover:bg-[rgba(168,85,247,0.14)]"
           >
             <ExternalLink size={16} aria-hidden="true" />
-            Read: Understanding cheaters &amp; anti-cheat (Reddit guide)
+            Reddit anti-cheat guide
           </a>
         </div>
       </div>
