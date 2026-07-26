@@ -22,7 +22,7 @@ function resolveSiteUrl(): string {
     return normalizeBaseUrl(process.env.NEXT_PUBLIC_SITE_URL);
   }
 
-  // Cloudflare Pages injects this during builds.
+  // Cloudflare Pages/Workers preview URL (prefer custom domain via .env.production).
   if (process.env.CF_PAGES_URL) {
     return normalizeBaseUrl(process.env.CF_PAGES_URL);
   }
