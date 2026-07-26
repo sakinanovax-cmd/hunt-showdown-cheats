@@ -23,11 +23,22 @@ export default function SeoIntro() {
             {SITE_PRIMARY_KEYWORD} — ESP, Aimbot, Wallhack &amp; Radar
           </h2>
           <p className="prose-body mx-auto mb-6 max-w-3xl text-lg">{SITE_SEO_HEADLINE}</p>
-          <p className="prose-body mx-auto mb-8 max-w-3xl">
+          <p className="prose-body mx-auto mb-5 max-w-3xl">
             This page covers Hunt Showdown cheats end-to-end: feature breakdowns, compatibility with Windows
             and Steam, setup guides, gameplay screenshots, price pages, and FAQs. {SITE_PRIMARY_KEYWORD} from Zadeyo
             include player ESP wallhack, aimbot, radar, triggerbot, recoil control, stream-proof mode, and
             Cloud DMA — from {PRICE_MONTHLY}/month or {PRICE_LIFETIME} lifetime with instant delivery.
+          </p>
+          <p className="prose-body mx-auto mb-5 max-w-3xl">
+            Hunters looking for Hunt Showdown ESP, wallhack, or radar usually need clearer information in fog,
+            dark compounds, and boss-banish fights. Zadeyo documents each feature plainly so you can compare
+            overlays, combat assists, and Cloud DMA options before checkout — without vague &quot;undetectable&quot;
+            claims. Every plan includes patch-ready loader updates and Discord setup help after purchase.
+          </p>
+          <p className="prose-body mx-auto mb-8 max-w-3xl">
+            Use this site to review cheat pages, pricing, FAQ answers, and setup guides, then buy on the
+            official Zadeyo product page when you are ready. {SITE_PRIMARY_KEYWORD} carry ban risk like any
+            third-party tool; keep loaders updated after Crytek patches and read the safety notes before you play.
           </p>
           <nav aria-label="Hunt Showdown cheats quick links" className="flex flex-col items-center justify-center gap-4 sm:flex-row sm:flex-wrap">
             <PurchaseButton>Buy Hunt Showdown Cheats</PurchaseButton>
