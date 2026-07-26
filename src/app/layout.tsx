@@ -27,8 +27,15 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
+          rel="preload"
+          as="style"
           href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap"
-          rel="stylesheet"
+        />
+        <link rel="preload" as="image" href="/images/gameplay/gameplay-09.webp" fetchPriority="high" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){var h="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap";var l=document.createElement("link");l.rel="stylesheet";l.href=h;l.media="print";l.onload=function(){this.media="all"};document.head.appendChild(l);})();`,
+          }}
         />
         <link rel="preconnect" href="https://zadeyo.com" />
         <link rel="dns-prefetch" href="https://zadeyo.com" />

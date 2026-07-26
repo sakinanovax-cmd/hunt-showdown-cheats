@@ -20,6 +20,7 @@ export default function HeroSideImages() {
             className="object-cover object-[center_58%]"
             sizes="(max-width: 640px) 92vw, (max-width: 1024px) 460px, 480px"
             priority
+            fetchPriority="high"
           />
 
           <div className="absolute inset-0 bg-gradient-to-t from-[rgba(6,4,9,0.75)] via-transparent to-transparent" />

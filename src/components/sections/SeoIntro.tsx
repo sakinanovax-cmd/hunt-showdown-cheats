@@ -67,11 +67,11 @@ export default function SeoIntro() {
               Setup guides
             </Link>
           </nav>
-          <p className="mt-8 font-mono-label text-xs text-[var(--color-text-muted)]">
+          <p className="mt-8 font-mono-label text-xs text-[var(--color-text-secondary)]">
             Official {SITE_PRIMARY_KEYWORD.toLowerCase()} resource · Last reviewed {LAST_CONTENT_REVIEW} ·{" "}
             <a
               href={ZADEYO_CHECKOUT_URL}
-              className="text-[var(--color-purple-light)] hover:underline"
+              className="font-semibold text-[var(--color-purple-light)] underline underline-offset-2"
               rel="noopener noreferrer"
               target="_blank"
             >

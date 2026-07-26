@@ -47,13 +47,13 @@ export const WHY_CHOOSE_CARDS = [
   {
     eyebrow: "Bayou atmosphere",
     title: "Built for Hunt: Showdown's dark Louisiana maps",
-    image: "/images/hunt/hunt-showdown-bayou.jpg",
+    image: "/images/hunt/hunt-showdown-bayou.webp",
     alt: "Hunt Showdown bayou — hunters in Louisiana swamp at dusk",
   },
   {
     eyebrow: "Patch-ready updates",
     title: "Stay compatible after every Crytek update",
-    image: "/images/hunt/roadmap-update.png",
+    image: "/images/hunt/roadmap-update.webp",
     alt: "Hunt Showdown patch update — cheat compatibility maintained",
   },
 ] as const;

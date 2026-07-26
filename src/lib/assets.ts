@@ -1,7 +1,8 @@
 /** Media sourced from https://zadeyo.com/products/hunt-showdown-cheats */
 export const ZADEYO_ASSETS = {
-  /** Official Zadeyo "Z" mark (also used for Google Search / favicon). */
-  logo: "/images/zadeyo/google-logo.png",
+  /** Compact WebP mark for UI (navbar/footer). Keep PNG for favicon/schema. */
+  logo: "/images/zadeyo/logo-mark.webp",
+  logoPng: "/images/zadeyo/google-logo.png",
   gameCover: "/images/zadeyo/game-cover.jpg",
   screenshotBanner: "/images/zadeyo/screenshot-banner.png",
   icon: "/images/zadeyo/google-logo.png",
@@ -9,12 +10,12 @@ export const ZADEYO_ASSETS = {
 
 /** Official Hunt: Showdown imagery provided for the site */
 export const HUNT_IMAGES = {
-  espCyan: "/images/hunt/gameplay-esp-cyan.png",
+  espCyan: "/images/hunt/gameplay-esp-cyan.webp",
   churchSniper: "/images/hunt/gameplay-church-sniper.png",
   huntersKeyart: "/images/hunt/hunters-keyart.png",
-  roadmapUpdate: "/images/hunt/roadmap-update.png",
-  bayouAtmosphere: "/images/hunt/hunt-showdown-bayou.jpg",
-  espOverlay: "/images/hunt/esp-overlay.png",
+  roadmapUpdate: "/images/hunt/roadmap-update.webp",
+  bayouAtmosphere: "/images/hunt/hunt-showdown-bayou.webp",
+  espOverlay: "/images/hunt/esp-overlay.webp",
 } as const;
 
 /** Community reference links */
@@ -25,7 +26,7 @@ export const REFERENCE_MEDIA = {
 
 /** Frames extracted from local Hunt Showdown gameplay video (hero/background use) */
 export const GAMEPLAY_FRAMES = {
-  espOutdoor: "/images/gameplay/gameplay-09.jpg",
+  espOutdoor: "/images/gameplay/gameplay-09.webp",
   espIndoor: "/images/gameplay/gameplay-10.jpg",
 } as const;
 
@@ -91,4 +92,4 @@ export const HERO_VIDEO = "/videos/hunt-showdown-cheats-demo.mp4";
 /** Full Hunt Showdown cheat gameplay demo (video page). */
 export const HUNT_SHOWDOWN_DEMO_VIDEO = HERO_VIDEO;
 /** Hero section full-bleed background image. */
-export const HERO_BACKGROUND = "/images/hunt/hero-background.jpg";
+export const HERO_BACKGROUND = "/images/hunt/hero-background.webp";

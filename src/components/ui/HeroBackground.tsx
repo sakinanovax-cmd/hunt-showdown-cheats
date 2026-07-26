@@ -12,8 +12,9 @@ export default function HeroBackground() {
             src={HERO_BACKGROUND}
             alt="Hunt Showdown bayou night atmosphere for cheats landing hero"
             fill
-            priority
             sizes="100vw"
+            loading="lazy"
+            decoding="async"
             className="hero-bg-image object-cover object-[center_58%]"
           />
         </div>

@@ -76,11 +76,7 @@ export function PurchaseButton({
   className?: string;
 }) {
   return (
-    <Button
-      href={ZADEYO_CHECKOUT_URL}
-      className={className}
-      ariaLabel="Buy Hunt Showdown cheats on Zadeyo"
-    >
+    <Button href={ZADEYO_CHECKOUT_URL} className={className}>
       {children}
     </Button>
   );
