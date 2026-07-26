@@ -107,11 +107,9 @@ export default function Hero() {
                 id="hero-heading"
                 className="ref-hero-title hero-headline-standalone fade-rise fade-rise-delay-1"
               >
-                {HERO_H1_LINES.map((line) => (
-                  <span key={line} className="hero-headline-line">
-                    {line}
-                  </span>
-                ))}
+                {HERO_H1_LINES[0]}
+                <br />
+                {HERO_H1_LINES[1]}
               </h1>
 
               <div className="hero-copy-panel fade-rise fade-rise-delay-2">
