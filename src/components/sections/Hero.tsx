@@ -1,5 +1,3 @@
-"use client";
-
 import Button, { PurchaseButton } from "@/components/ui/Button";
 import HeroBackground from "@/components/ui/HeroBackground";
 import HeroSideImages from "@/components/ui/HeroSideImages";
@@ -10,7 +8,6 @@ import {
   HERO_TRUST_ITEMS,
 } from "@/lib/constants";
 import { HERO_H1_LINES } from "@/lib/site";
-import { Check } from "lucide-react";
 
 const RING_SIZE = 112;
 const RING_STROKE = 3.5;
@@ -86,6 +83,25 @@ function StatRing({
   );
 }
 
+function CheckIcon() {
+  return (
+    <svg
+      width="16"
+      height="16"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className="text-[var(--color-purple-light)]"
+      aria-hidden="true"
+    >
+      <path d="M20 6 9 17l-5-5" />
+    </svg>
+  );
+}
+
 export default function Hero() {
   return (
     <section
@@ -98,37 +114,35 @@ export default function Hero() {
         <div className="hero-layout">
           <div className="hero-split-grid">
             <div className="hero-copy-col">
-              <div className="badge-pill badge-pill-glow mb-4 inline-flex w-fit fade-rise">
+              <div className="badge-pill badge-pill-glow mb-4 inline-flex w-fit">
                 <span className="badge-dot" />
                 {HERO_BADGES.join(" · ")}
               </div>
 
               <h1
                 id="hero-heading"
-                className="ref-hero-title hero-headline-standalone fade-rise fade-rise-delay-1"
+                className="ref-hero-title hero-headline-standalone"
               >
                 {HERO_H1_LINES[0]}
                 <br />
                 {HERO_H1_LINES[1]}
               </h1>
 
-              <div className="hero-copy-panel fade-rise fade-rise-delay-2">
+              <div className="hero-copy-panel">
                 <p className="ref-hero-subtitle mb-5">{HERO_SUBTITLE}</p>
 
                 <p className="prose-body max-w-lg">
-                  Private Hunt Showdown ESP, aimbot, and wallhack built for clearer enemy information,
-                  faster decisions, and a simple setup. Get patch-ready updates, instant access, and
-                  reliable Discord support.
+                  Private ESP, aimbot, and wallhack with patch-ready updates and Discord support.
                 </p>
               </div>
             </div>
 
-            <div className="hero-preview-col fade-rise fade-rise-delay-3">
+            <div className="hero-preview-col">
               <HeroSideImages />
             </div>
           </div>
 
-          <div className="hero-action-bar fade-rise fade-rise-delay-4">
+          <div className="hero-action-bar">
             <div className="hero-action-stats" role="list" aria-label="Trust stats">
               {HERO_STATS.map((stat) => (
                 <StatRing key={stat.label} {...stat} />
@@ -149,7 +163,7 @@ export default function Hero() {
             <ul className="hero-action-trust">
               {HERO_TRUST_ITEMS.map((item) => (
                 <li key={item} className="inline-flex items-center gap-2 text-sm text-[var(--color-text-secondary)]">
-                  <Check size={16} className="text-[var(--color-purple-light)]" aria-hidden="true" />
+                  <CheckIcon />
                   {item}
                 </li>
               ))}

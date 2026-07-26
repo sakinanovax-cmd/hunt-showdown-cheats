@@ -24,17 +24,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full">
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          rel="preload"
-          as="style"
-          href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap"
-        />
-        <link rel="preload" as="image" href="/images/gameplay/gameplay-09.webp" fetchPriority="high" />
-        <script
+        <style
           dangerouslySetInnerHTML={{
-            __html: `(function(){var h="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap";var l=document.createElement("link");l.rel="stylesheet";l.href=h;l.media="print";l.onload=function(){this.media="all"};document.head.appendChild(l);})();`,
+            __html:
+              "html,body{background:#0a0614;color:#f0ecff;margin:0}body{font-family:Arial,Helvetica,sans-serif}.ref-hero-title{font-family:Arial Narrow,Arial,sans-serif;font-weight:800;line-height:0.95;letter-spacing:-0.02em;font-size:clamp(2.75rem,12vw,4.75rem);margin:0}",
           }}
         />
         <link rel="preconnect" href="https://zadeyo.com" />
@@ -47,9 +40,12 @@ export default function RootLayout({
         <a href="#main-content" className="skip-link">
           Skip to content
         </a>
-        <div className="ambient-glow" aria-hidden="true" />
-        <div className="grain-overlay" aria-hidden="true" />
         {children}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){function loadFonts(){if(document.getElementById("site-fonts-css"))return;var l=document.createElement("link");l.id="site-fonts-css";l.rel="stylesheet";l.href="/fonts.css";document.head.appendChild(l);document.documentElement.classList.add("fonts-ready")}if("requestIdleCallback"in window){requestIdleCallback(loadFonts,{timeout:2500})}else{window.addEventListener("load",function(){setTimeout(loadFonts,1)})}})();`,
+          }}
+        />
         <noscript>
           <div className="container-dnd py-4 text-center text-sm text-[var(--color-text-secondary)]">
             JavaScript is disabled. You can still{" "}

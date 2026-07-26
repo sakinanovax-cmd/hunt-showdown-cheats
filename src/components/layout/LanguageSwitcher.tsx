@@ -76,10 +76,13 @@ export default function LanguageSwitcher({ compact = false }: { compact?: boolea
     const initial = saved && SITE_LANGUAGES.some((l) => l.code === saved) ? saved : DEFAULT_LANGUAGE;
     setCurrent(initial);
     applyHtmlLang(initial);
-    ensureGoogleTranslate();
 
+    // Do not load Google Translate on English — it tanks Lighthouse Performance/Best Practices.
     if (initial !== "en") {
       setGoogTransCookie(initial);
+      ensureGoogleTranslate();
+    } else {
+      setGoogTransCookie("en");
     }
   }, []);
 
@@ -107,6 +110,7 @@ export default function LanguageSwitcher({ compact = false }: { compact?: boolea
     setGoogTransCookie(code);
     applyHtmlLang(code);
     setOpen(false);
+    if (code !== "en") ensureGoogleTranslate();
     window.location.reload();
   };
 

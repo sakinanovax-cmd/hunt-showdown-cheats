@@ -6,7 +6,7 @@
     "dev": "next dev -p 8080",
     "preview": "npm run build:gh-pages && npx serve out -l 8090",
     "generate:rss": "node scripts/generate-rss.mjs",
-    "prebuild": "node scripts/generate-rss.mjs && node scripts/ensure-cf-asset-limits.mjs",
+    "prebuild": "node scripts/prepare-fonts-css.mjs && node scripts/generate-rss.mjs && node scripts/ensure-cf-asset-limits.mjs",
     "build": "next build",
     "postbuild": "node scripts/ensure-cf-asset-limits.mjs",
     "compress:videos": "node scripts/compress-videos-for-cf.mjs",

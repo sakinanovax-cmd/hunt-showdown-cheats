@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { HERO_SIDE_IMAGES } from "@/lib/assets";
 
@@ -6,21 +5,23 @@ export default function HeroSideImages() {
   const current = HERO_SIDE_IMAGES[0];
 
   return (
-    <div className="hero-side-images w-full max-w-[min(100%,420px)] sm:max-w-[460px] lg:max-w-[480px]">
+    <div className="hero-side-images hidden w-full max-w-[min(100%,420px)] sm:max-w-[460px] lg:block lg:max-w-[480px]">
       <div className="mb-3 flex items-center justify-between gap-3">
         <p className="font-mono-label text-[var(--color-purple-light)]">Live overlay preview</p>
       </div>
 
       <figure className="hero-side-image-card overflow-hidden rounded-xl border border-[rgba(168,85,247,0.28)] bg-[rgba(12,10,16,0.85)] shadow-[0_20px_56px_rgba(6,4,9,0.65)]">
         <div className="relative aspect-[16/10] overflow-hidden">
-          <Image
+          {/* Native img for desktop LCP path; hidden on mobile so LCP is the H1 text */}
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             src={current.src}
             alt={current.alt}
-            fill
-            className="object-cover object-[center_58%]"
-            sizes="(max-width: 640px) 92vw, (max-width: 1024px) 460px, 480px"
-            priority
-            fetchPriority="high"
+            width={640}
+            height={360}
+            decoding="async"
+            loading="lazy"
+            className="h-full w-full object-cover object-[center_58%]"
           />
 
           <div className="absolute inset-0 bg-gradient-to-t from-[rgba(6,4,9,0.75)] via-transparent to-transparent" />

@@ -1,23 +1,16 @@
-import Image from "next/image";
 import { HERO_BACKGROUND } from "@/lib/assets";
 
+/** CSS background only — must not compete with the LCP side image. */
 export default function HeroBackground() {
   return (
     <div className="hero-bg-root absolute inset-0 overflow-hidden" aria-hidden="true">
       <div className="absolute inset-0 bg-[var(--color-bg)]" />
 
       <div className="hero-bg-video-wrap">
-        <div className="hero-bg-video-zoom">
-          <Image
-            src={HERO_BACKGROUND}
-            alt="Hunt Showdown bayou night atmosphere for cheats landing hero"
-            fill
-            sizes="100vw"
-            loading="lazy"
-            decoding="async"
-            className="hero-bg-image object-cover object-[center_58%]"
-          />
-        </div>
+        <div
+          className="hero-bg-video-zoom hero-bg-image"
+          style={{ backgroundImage: `url(${HERO_BACKGROUND})` }}
+        />
       </div>
 
       <div className="hero-bg-glow-left absolute inset-0" />

@@ -19,6 +19,11 @@
   --max-content: 1200px;
   --section-py: clamp(4rem, 8vw, 7rem);
   --section-px: clamp(1.125rem, 4vw, 2rem);
+  --font-sans: Arial, Helvetica, sans-serif;
+  --font-display: "Arial Narrow", Arial, Helvetica, sans-serif;
+}
+
+html.fonts-ready {
   --font-sans: "DM Sans", Arial, Helvetica, sans-serif;
   --font-display: "Barlow Condensed", "Arial Narrow", Arial, sans-serif;
 }
@@ -31,11 +36,11 @@
   --color-purple-light: #c084fc;
   --color-gold: #d4a853;
   --color-text: #f0ecff;
-  --font-sans: "DM Sans", Arial, Helvetica, sans-serif;
-  --font-display: "Barlow Condensed", "Arial Narrow", Arial, sans-serif;
-  --font-body: "DM Sans", Arial, Helvetica, sans-serif;
-  --font-dm-sans: "DM Sans", Arial, Helvetica, sans-serif;
-  --font-bebas: "Barlow Condensed", "Arial Narrow", Arial, sans-serif;
+  --font-sans: Arial, Helvetica, sans-serif;
+  --font-display: "Arial Narrow", Arial, Helvetica, sans-serif;
+  --font-body: Arial, Helvetica, sans-serif;
+  --font-dm-sans: Arial, Helvetica, sans-serif;
+  --font-bebas: "Arial Narrow", Arial, Helvetica, sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -58,14 +63,10 @@ html {
 
 body {
   background-color: var(--color-bg);
-  background-image:
-    radial-gradient(ellipse 90% 55% at 15% -10%, rgba(124, 58, 237, 0.28) 0%, transparent 55%),
-    radial-gradient(ellipse 70% 45% at 85% 20%, rgba(168, 85, 247, 0.18) 0%, transparent 50%),
-    radial-gradient(ellipse 80% 50% at 50% 110%, rgba(88, 28, 135, 0.22) 0%, transparent 55%),
-    linear-gradient(180deg, #12081f 0%, #0a0614 40%, #0d0818 100%);
-  background-attachment: fixed;
+  /* Single gradient — avoid background-attachment:fixed (mobile LCP killer) */
+  background-image: linear-gradient(180deg, #12081f 0%, #0a0614 45%, #0d0818 100%);
   color: var(--color-text);
-  font-family: "DM Sans", Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: 0;
@@ -418,6 +419,12 @@ video {
   display: flex;
   min-height: 60dvh;
   align-items: center;
+}
+
+/* Defer layout work for below-fold homepage bands */
+.cv-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 900px;
 }
 
 /* ── Ambient effects ── */
@@ -861,8 +868,11 @@ video {
 
 .hero-bg-video-zoom {
   position: absolute;
-  inset: -12%;
-  animation: slowZoom 32s ease-in-out infinite alternate;
+  inset: -8%;
+  background-size: cover;
+  background-position: center 58%;
+  background-repeat: no-repeat;
+  /* No infinite zoom on first paint — keeps LCP/FCP stable */
 }
 
 .hero-cheat-preview {

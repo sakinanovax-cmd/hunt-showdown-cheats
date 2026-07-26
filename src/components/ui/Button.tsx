@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import { ZADEYO_CHECKOUT_URL } from "@/lib/site";
 

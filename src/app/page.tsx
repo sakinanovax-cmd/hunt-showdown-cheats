@@ -28,7 +28,7 @@ export const metadata: Metadata = buildPageMetadata({
   description: SITE_SEO_DESCRIPTION,
   path: "/",
   imageAlt: "Hunt Showdown cheats — ESP wallhack gameplay screenshot",
-  imagePath: "/images/hunt/esp-overlay.png",
+  imagePath: "/images/hunt/esp-overlay.webp",
 });
 
 export default function HomePage() {
@@ -52,13 +52,27 @@ export default function HomePage() {
       <main id="main-content" className="relative z-10">
         <Hero />
         <SeoIntro />
-        <WhyChoose />
-        <EnemyVisuals />
-        <WorldVisuals />
-        <CheatsHub />
-        <VideoShowcase />
-        <BlogPreview />
-        <FAQ showFullPageLink />
+        <div className="cv-auto">
+          <WhyChoose />
+        </div>
+        <div className="cv-auto">
+          <EnemyVisuals />
+        </div>
+        <div className="cv-auto">
+          <WorldVisuals />
+        </div>
+        <div className="cv-auto">
+          <CheatsHub />
+        </div>
+        <div className="cv-auto">
+          <VideoShowcase />
+        </div>
+        <div className="cv-auto">
+          <BlogPreview />
+        </div>
+        <div className="cv-auto">
+          <FAQ showFullPageLink />
+        </div>
       </main>
       <Footer />
     </>
