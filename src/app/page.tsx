@@ -19,7 +19,6 @@ import {
   getBreadcrumbSchema,
   getFAQSchema,
   getProductSchema,
-  getVideoSchema,
   getWebPageSchema,
 } from "@/lib/seo";
 
@@ -44,7 +43,6 @@ export default function HomePage() {
           getBreadcrumbSchema([{ name: SITE_PRIMARY_KEYWORD, url: getCanonicalUrl("/") }]),
           getProductSchema(),
           getFAQSchema(),
-          getVideoSchema(),
           getBlogListSchema(),
         ]}
       />

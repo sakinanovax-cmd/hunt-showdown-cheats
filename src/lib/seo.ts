@@ -1,6 +1,6 @@
 import { BLOG_ARTICLES, FAQ_ITEMS, PRICING_PLANS } from "./constants";
 import { CHEAT_PRODUCTS } from "./cheats";
-import { GAMEPLAY_FRAMES, HERO_VIDEO, VIDEO_POSTER } from "./assets";
+import { GAMEPLAY_FRAMES, HUNT_IMAGES, VIDEO_POSTER } from "./assets";
 import {
   BLOG_META_DESCRIPTIONS,
   CHEAT_META_DESCRIPTIONS,
@@ -100,25 +100,80 @@ export function getWebPageSchema({
     url: getCanonicalUrl(path),
     inLanguage: "en",
     isPartOf: { "@type": "WebSite", url: getCanonicalUrl("/"), name: SITE_PRODUCT_NAME },
-    about: { "@type": "Product", name: SITE_PRODUCT_NAME },
+    // Do NOT nest a bare Product here — Google counts it as a 2nd invalid Product snippet.
+    about: { "@type": "Thing", name: SITE_PRODUCT_NAME },
   };
 }
 
-function buildOffer(plan: (typeof PRICING_PLANS)[number]) {
+/** Digital delivery — required for Merchant listing Offer validation. */
+function buildShippingDetails() {
+  return {
+    "@type": "OfferShippingDetails",
+    shippingRate: {
+      "@type": "MonetaryAmount",
+      value: 0,
+      currency: "USD",
+    },
+    shippingDestination: {
+      "@type": "DefinedRegion",
+      addressCountry: "US",
+    },
+    deliveryTime: {
+      "@type": "ShippingDeliveryTime",
+      handlingTime: {
+        "@type": "QuantitativeValue",
+        minValue: 0,
+        maxValue: 0,
+        unitCode: "DAY",
+      },
+      transitTime: {
+        "@type": "QuantitativeValue",
+        minValue: 0,
+        maxValue: 0,
+        unitCode: "DAY",
+      },
+    },
+  };
+}
+
+function buildReturnPolicy() {
+  return {
+    "@type": "MerchantReturnPolicy",
+    applicableCountry: ["US"],
+    returnPolicyCategory: "https://schema.org/MerchantReturnNotPermitted",
+  };
+}
+
+function buildOffer(plan: (typeof PRICING_PLANS)[number], offerName?: string) {
+  const price = Number(plan.price.replace("$", ""));
   return {
     "@type": "Offer",
-    name: `${SITE_PRODUCT_NAME} — ${plan.name}`,
-    price: plan.price.replace("$", ""),
+    name: offerName ?? `${SITE_PRODUCT_NAME} — ${plan.name}`,
+    price,
     priceCurrency: "USD",
     availability: "https://schema.org/InStock",
+    itemCondition: "https://schema.org/NewCondition",
     url: ZADEYO_CHECKOUT_URL,
     description: plan.duration,
     priceValidUntil: OFFER_VALID_UNTIL,
-    seller: { "@type": "Organization", name: SITE_NAME },
+    seller: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      url: getCanonicalUrl("/"),
+    },
+    shippingDetails: buildShippingDetails(),
+    hasMerchantReturnPolicy: buildReturnPolicy(),
   };
 }
 
+const PRODUCT_IMAGES = [
+  getAbsoluteAssetUrl(HUNT_IMAGES.espOverlay),
+  getAbsoluteAssetUrl(GAMEPLAY_FRAMES.espOutdoor),
+  getAbsoluteAssetUrl(VIDEO_POSTER),
+];
+
 export function getProductSchema() {
+  const monthly = PRICING_PLANS.find((p) => p.name === "Monthly") ?? PRICING_PLANS[0];
   return {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -127,14 +182,13 @@ export function getProductSchema() {
     description:
       "Hunt Showdown cheats with ESP for player and loot visibility, aimbot, triggerbot, radar, recoil control, silent aim, stream-proof mode, and Cloud DMA option.",
     category: "Software > Game Utilities",
+    sku: "zadeyo-hunt-showdown-cheats",
+    mpn: "ZADEYO-HUNT-CHEATS",
     brand: { "@type": "Brand", name: SITE_NAME },
     url: getCanonicalUrl("/buy/"),
-    image: [
-      getAbsoluteAssetUrl(VIDEO_POSTER),
-      getAbsoluteAssetUrl(GAMEPLAY_FRAMES.espOutdoor),
-      getAbsoluteAssetUrl("/images/hunt/esp-overlay.png"),
-    ],
-    offers: PRICING_PLANS.map(buildOffer),
+    image: PRODUCT_IMAGES,
+    // Single Offer (not AggregateOffer) — required for Merchant listings.
+    offers: buildOffer(monthly),
   };
 }
 
@@ -145,19 +199,20 @@ export function getCheatProductSchema(cheat: {
   image: string;
   shortName: string;
 }) {
+  const monthly = PRICING_PLANS.find((p) => p.name === "Monthly") ?? PRICING_PLANS[0];
   return {
     "@context": "https://schema.org",
     "@type": "Product",
+    "@id": `${getCanonicalUrl(`/cheats/${cheat.slug}/`)}#product`,
     name: cheat.name,
     description: CHEAT_META_DESCRIPTIONS[cheat.slug] ?? cheat.description,
     url: getCanonicalUrl(`/cheats/${cheat.slug}/`),
-    image: getAbsoluteAssetUrl(cheat.image),
+    image: [getAbsoluteAssetUrl(cheat.image), ...PRODUCT_IMAGES],
     category: "Software > Game Utilities",
+    sku: `zadeyo-hunt-${cheat.slug}`,
+    mpn: `ZADEYO-HUNT-${cheat.shortName.toUpperCase().replace(/\s+/g, "-")}`,
     brand: { "@type": "Brand", name: SITE_NAME },
-    offers: PRICING_PLANS.map((plan) => ({
-      ...buildOffer(plan),
-      name: `${cheat.shortName} — ${plan.name}`,
-    })),
+    offers: buildOffer(monthly, `${cheat.shortName} — ${monthly.name}`),
   };
 }
 
@@ -255,17 +310,28 @@ export function getBreadcrumbSchema(items: { name: string; url: string }[]) {
 }
 
 export function getVideoSchema() {
+  const thumb = getAbsoluteAssetUrl(VIDEO_POSTER);
+  // embedUrl is enough for Google when a direct mp4 is not always deployed.
   return {
     "@context": "https://schema.org",
     "@type": "VideoObject",
+    "@id": `${getCanonicalUrl("/video/")}#video`,
     name: "Hunt Showdown Cheats Gameplay — ESP, Aimbot & Wallhack Demo",
     description:
       "Gameplay footage showing Hunt Showdown cheat features including player ESP, wallhack, aimbot, and radar overlay.",
-    thumbnailUrl: getAbsoluteAssetUrl(VIDEO_POSTER),
-    contentUrl: getAbsoluteAssetUrl(HERO_VIDEO),
+    thumbnailUrl: [thumb, getAbsoluteAssetUrl(HUNT_IMAGES.espOverlay)],
     embedUrl: getCanonicalUrl("/video/"),
-    uploadDate: "2026-07-01",
+    uploadDate: "2026-07-01T12:00:00+00:00",
     duration: "PT2M30S",
     inLanguage: "en",
+    isFamilyFriendly: true,
+    publisher: {
+      "@type": "Organization",
+      name: SITE_NAME,
+      logo: {
+        "@type": "ImageObject",
+        url: getAbsoluteAssetUrl("/images/zadeyo/google-logo.png"),
+      },
+    },
   };
 }
