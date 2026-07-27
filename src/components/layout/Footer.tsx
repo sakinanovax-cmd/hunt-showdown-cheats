@@ -8,6 +8,7 @@ import {
   ZADEYO_CHECKOUT_URL,
 } from "@/lib/site";
 import Logo from "@/components/ui/Logo";
+import SocialShare from "@/components/seo/SocialShare";
 
 export default function Footer() {
   return (
@@ -31,7 +32,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link href="/" className="text-sm text-[var(--color-text-secondary)] hover:text-[var(--color-text)]">
-                  Home
+                  Landing
                 </Link>
               </li>
               {FOOTER_LINKS.shop.map((link) => (
@@ -48,7 +49,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  Checkout store
+                  Buy on Zadeyo
                 </a>
               </li>
             </ul>
@@ -90,6 +91,9 @@ export default function Footer() {
           </div>
         </div>
         <div className="section-divider my-10" />
+        <div className="mb-8 flex justify-center">
+          <SocialShare path="/" />
+        </div>
         <div className="space-y-3 text-center text-xs text-[var(--color-text-muted)]">
           <p>
             © {new Date().getFullYear()} {SITE_NAME}.{" "}
