@@ -3,11 +3,11 @@
  */
 
 export const META_TITLES = {
-  home: "Best Hunt Showdown Cheats 2026 — Buy ESP & Aimbot",
+  home: "Hunt Showdown Cheats — Buy ESP, Aimbot & Wallhack",
   buy: "Buy Hunt Showdown Cheats — $35/mo & $150 Lifetime",
   cheatsIndex: "Hunt Showdown Cheats List — ESP, Aimbot & Wallhack",
   blogIndex: "Hunt Showdown Cheat Guides — ESP & Setup",
-  compare: "Hunt Showdown Cheat Comparison — Features & Price",
+  compare: "Best Hunt Showdown Cheats 2026 — Compared",
   faq: "Hunt Showdown Cheats FAQ — Price, ESP & Safety",
   video: "Hunt Showdown Cheats Video — ESP & Aimbot Demo",
   notFound: "Page Not Found",
@@ -32,6 +32,9 @@ export const BLOG_META_TITLES: Record<string, string> = {
   "hunt-showdown-anti-cheat-analysis": "Hunt Showdown Anti-Cheat & Cheat Safety",
   "hunt-showdown-beginners-guide": "Hunt Showdown Cheats for Beginners — Setup Guide",
   "best-hunt-showdown-cheat-comparison-2026": "Best Hunt Showdown Cheats 2026 — Compared",
+  "hunt-showdown-wallhack-guide": "Hunt Showdown Wallhack Guide — Through Walls",
+  "hunt-showdown-dma-vs-external": "Hunt Showdown DMA vs External Cheats",
+  "hunt-showdown-cheat-patch-status": "Hunt Showdown Cheat Updates After Patches",
 };
 
 export function getCheatMetaTitle(slug: string, fallback: string): string {

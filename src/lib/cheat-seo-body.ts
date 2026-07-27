@@ -1,15 +1,56 @@
 /** Unique long-form copy for cheat landing pages (ranking / thin-content fix). */
 
-export const CHEAT_SEO_BODY: Record<
-  string,
-  { heading: string; paragraphs: string[] }
-> = {
+export type CheatSeoSection = {
+  heading: string;
+  paragraphs: string[];
+};
+
+export type CheatSeoBody = {
+  heading: string;
+  paragraphs: string[];
+  sections?: CheatSeoSection[];
+};
+
+export const CHEAT_SEO_BODY: Record<string, CheatSeoBody> = {
   esp: {
-    heading: "Why hunters buy Hunt Showdown ESP",
+    heading: "Hunt Showdown ESP cheat — full buyer guide",
     paragraphs: [
-      "Hunt Showdown ESP is the most requested cheat for bayou PvP. Fog, dark compounds, and vertical barns hide threats until it is too late — player boxes, health bars, distance tags, and skeleton wallhack reverse that information gap.",
-      "Zadeyo ESP is included in every plan from $35/month or $150 lifetime, ships with stream-proof mode, and receives patch-ready loader updates after Crytek releases. Pair it with radar for full-map rotations and aimbot for the fights you choose to take.",
-      "Before you buy, read our ESP setup guide and compare providers on the comparison page so you know exactly what overlays and delivery options you are getting.",
+      "Hunt Showdown ESP is the most searched cheat for bayou PvP. Fog, dark compounds, and vertical barns hide threats until it is too late — player boxes, health bars, distance tags, and skeleton wallhack reverse that information gap.",
+      "Zadeyo ESP ships in every plan from $35/month or $150 lifetime with stream-proof mode and patch-ready loader updates after Crytek releases. Pair it with radar for map rotations and aimbot for the fights you choose to take.",
+    ],
+    sections: [
+      {
+        heading: "Player box, skeleton & health ESP settings",
+        paragraphs: [
+          "Start with player boxes and distance tags capped around 120–150m outdoors. Raise opacity at night when torch light hides silhouettes, and lower it in fog so overlays stay readable without painting your whole screen.",
+          "Skeleton ESP shows bone posture — scoped on a window, holding a revive, or swinging wide around a barn. Health bars tell you whether a peek is free or a bait. Toggle layers per fight: minimal boxes for stealth extracts, full skeleton + health for compound clears.",
+          "Name tags and snap lines help when multiple hunters stack in one building. Use them sparingly if you stream — stream-proof mode hides overlays from OBS, but your own screen still shows every layer you enable.",
+        ],
+      },
+      {
+        heading: "Boss ESP, loot ESP & banish awareness",
+        paragraphs: [
+          "Boss ESP marks PvE targets during banish so you know when sound will draw third parties. Enable it before the bar starts — rival teams rotate on gunshot audio long before they reach your compound.",
+          "Loot ESP highlights high-value weapons, ammo, and traits through walls. Use it after a wipe to re-kit fast, or before a push to grab a better long ammo gun without walking every crate.",
+          "Combine boss ESP with radar: ESP for the local compound, radar for teams holding distance. That stack is what most hunters mean when they search Hunt Showdown wallhack or Hunt Showdown ESP cheat.",
+        ],
+      },
+      {
+        heading: "ESP vs wallhack vs radar — what to buy",
+        paragraphs: [
+          "Wallhack usually means silhouettes through geometry. ESP adds readable data — distance, health, skeleton. Radar adds map-level blips outside your current compound. Zadeyo bundles all three in one Hunt Showdown cheat loader.",
+          "If you only buy one awareness tool, choose ESP. Add radar when you die to third parties you never heard. Add aimbot after your information game is stable — aim assists do not fix bad rotations.",
+          "Compare providers on price, Cloud DMA support, and patch update speed before checkout. Stale ESP after a Crytek hotfix is more expensive than a clear monthly plan.",
+        ],
+      },
+      {
+        heading: "How to buy Hunt Showdown ESP from Zadeyo",
+        paragraphs: [
+          "Open the buy page for $35/month or $150 lifetime pricing, or go straight to Zadeyo checkout for instant loader delivery. Cloud DMA setup stays available if you need HVCI and Secure Boot left ON.",
+          "After install, enable Player ESP first, test colors in a short session, then add boss and loot layers. Read the ESP setup guide and anti-cheat safety notes before taking expensive hunters into ranked lobbies.",
+          "All Hunt Showdown cheats carry ban risk. Keep the loader updated after every game patch and avoid rage settings right after hotfixes when detection patterns often change.",
+        ],
+      },
     ],
   },
   aimbot: {

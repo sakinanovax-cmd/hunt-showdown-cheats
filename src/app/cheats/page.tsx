@@ -54,8 +54,8 @@ export default function CheatsIndexPage() {
           <SectionHeading
             as="h1"
             eyebrow="Cheat suite"
-            heading="Every Hunt Showdown cheat — pick your edge"
-            description={`Nine dedicated cheat pages with pricing, features, and buy links. Full suite from ${PRICE_MONTHLY}/month or ${PRICE_LIFETIME} lifetime.`}
+            heading="Hunt Showdown Cheats — ESP, Aimbot, Wallhack & Radar"
+            description={`Nine Hunt Showdown cheat pages with pricing, features, and buy links. Full suite from ${PRICE_MONTHLY}/month or ${PRICE_LIFETIME} lifetime.`}
             align="left"
           />
 

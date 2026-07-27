@@ -17,7 +17,7 @@ import { META_DESCRIPTIONS } from "@/lib/seo-descriptions";
 import { META_TITLES } from "@/lib/seo-titles";
 import { getBreadcrumbSchema, getFAQSchema, getWebPageSchema } from "@/lib/seo";
 import { getCanonicalUrl, PRICE_LIFETIME, PRICE_MONTHLY, ZADEYO_CHECKOUT_URL } from "@/lib/site";
-import { Check, X } from "lucide-react";
+import { Check } from "lucide-react";
 
 export const metadata: Metadata = buildPageMetadata({
   title: META_TITLES.compare,
@@ -83,15 +83,17 @@ export default function ComparePage() {
                 <dl>
                   <dt>Zadeyo</dt>
                   <dd className="text-[var(--color-text)]">{row.zadeyo}</dd>
-                  <dt>Typical providers</dt>
-                  <dd>{row.typical}</dd>
+                  <dt>Multi-game shops</dt>
+                  <dd>{row.multiGameShop}</dd>
+                  <dt>Forum sellers</dt>
+                  <dd>{row.forumSeller}</dd>
                 </dl>
               </article>
             ))}
           </div>
 
           <div className="mb-10 hidden overflow-x-auto rounded-xl border border-[var(--color-border)] md:block">
-            <table className="w-full min-w-[640px] text-left text-sm">
+            <table className="w-full min-w-[720px] text-left text-sm">
               <thead>
                 <tr className="border-b border-[var(--color-border)] bg-[var(--color-surface)]">
                   <th scope="col" className="px-4 py-4 font-semibold text-[var(--color-text)]">
@@ -101,7 +103,10 @@ export default function ComparePage() {
                     Zadeyo
                   </th>
                   <th scope="col" className="px-4 py-4 font-semibold text-[var(--color-text-secondary)]">
-                    Typical providers
+                    Multi-game shops
+                  </th>
+                  <th scope="col" className="px-4 py-4 font-semibold text-[var(--color-text-secondary)]">
+                    Forum sellers
                   </th>
                 </tr>
               </thead>
@@ -117,12 +122,8 @@ export default function ComparePage() {
                         {row.zadeyo}
                       </span>
                     </td>
-                    <td className="px-4 py-3 text-[var(--color-text-secondary)]">
-                      <span className="inline-flex items-center gap-2">
-                        <X className="h-4 w-4 shrink-0 text-[var(--color-text-muted)]" aria-hidden />
-                        {row.typical}
-                      </span>
-                    </td>
+                    <td className="px-4 py-3 text-[var(--color-text-secondary)]">{row.multiGameShop}</td>
+                    <td className="px-4 py-3 text-[var(--color-text-secondary)]">{row.forumSeller}</td>
                   </tr>
                 ))}
               </tbody>

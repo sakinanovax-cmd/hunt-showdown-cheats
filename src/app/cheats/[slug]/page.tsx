@@ -142,6 +142,18 @@ export default async function CheatPage({ params }: Props) {
                   </p>
                 ))}
               </div>
+              {seoBody.sections?.map((section) => (
+                <div key={section.heading} className="mt-8">
+                  <h3 className="mb-3 text-lg font-semibold text-[var(--color-text)]">{section.heading}</h3>
+                  <div className="space-y-4">
+                    {section.paragraphs.map((paragraph) => (
+                      <p key={paragraph.slice(0, 48)} className="prose-body text-[var(--color-text-secondary)]">
+                        {paragraph}
+                      </p>
+                    ))}
+                  </div>
+                </div>
+              ))}
               <p className="mt-6 text-sm text-[var(--color-text-muted)]">
                 Also see{" "}
                 <Link href="/buy/" className="text-[var(--color-purple-light)] hover:underline">

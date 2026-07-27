@@ -69,6 +69,12 @@ export const BLOG_META_DESCRIPTIONS: Record<string, string> = {
     "Hunt Showdown cheats for beginners — ESP, radar, aimbot setup & extract habits. Start with Zadeyo from $35/mo. Step-by-step bayou guide.",
   "best-hunt-showdown-cheat-comparison-2026":
     "Best Hunt Showdown cheats 2026 compared — ESP, aimbot, Cloud DMA, price & support. See why Zadeyo ranks #1 from $35/mo or $150 lifetime.",
+  "hunt-showdown-wallhack-guide":
+    "Hunt Showdown wallhack guide — through-wall vision, compounds & extracts. Pair with ESP from Zadeyo starting at $35/mo.",
+  "hunt-showdown-dma-vs-external":
+    "Hunt Showdown DMA vs external cheats — HVCI, Secure Boot & Cloud DMA tradeoffs. Choose the right Zadeyo setup from $35/mo.",
+  "hunt-showdown-cheat-patch-status":
+    "Hunt Showdown cheat updates after Crytek patches — what to check, when to wait, and how Zadeyo ships loader refreshes.",
 };
 
 export function getCheatMetaDescription(slug: string, fallback: string): string {

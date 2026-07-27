@@ -3,26 +3,79 @@ import { PRICE_LIFETIME, PRICE_MONTHLY } from "./site";
 export type ComparisonRow = {
   feature: string;
   zadeyo: string;
-  typical: string;
+  multiGameShop: string;
+  forumSeller: string;
 };
 
+/** Named provider categories — clearer than a vague “typical” column for comparison SERPs. */
 export const COMPARISON_ROWS: ComparisonRow[] = [
-  { feature: "Player ESP & wallhack", zadeyo: "Full suite", typical: "Often partial" },
-  { feature: "Aimbot & triggerbot", zadeyo: "Included", typical: "Extra tier or missing" },
-  { feature: "Radar overlay", zadeyo: "Included", typical: "Add-on or absent" },
-  { feature: "Cloud DMA (HVCI ON)", zadeyo: "Supported", typical: "Rare or disabled" },
-  { feature: "Stream-proof mode", zadeyo: "Included", typical: "Not always offered" },
-  { feature: "Patch update speed", zadeyo: "Same-day loader refresh", typical: "Days to weeks" },
-  { feature: "Setup support", zadeyo: "24/7 Discord + guides", typical: "Ticket-only or none" },
-  { feature: "Monthly price", zadeyo: PRICE_MONTHLY, typical: "$40–$80+" },
-  { feature: "Lifetime price", zadeyo: PRICE_LIFETIME, typical: "$200–$350+" },
-  { feature: "Delivery", zadeyo: "Instant after checkout", typical: "Manual or delayed" },
+  {
+    feature: "Player ESP & wallhack",
+    zadeyo: "Full suite included",
+    multiGameShop: "Often partial / tier-gated",
+    forumSeller: "Varies; docs rare",
+  },
+  {
+    feature: "Aimbot & triggerbot",
+    zadeyo: "Included",
+    multiGameShop: "Extra tier or missing",
+    forumSeller: "Unclear feature list",
+  },
+  {
+    feature: "Radar overlay",
+    zadeyo: "Included",
+    multiGameShop: "Add-on or absent",
+    forumSeller: "Rarely documented",
+  },
+  {
+    feature: "Cloud DMA (HVCI ON)",
+    zadeyo: "Supported",
+    multiGameShop: "Rare or disabled",
+    forumSeller: "Usually unsupported",
+  },
+  {
+    feature: "Stream-proof mode",
+    zadeyo: "Included",
+    multiGameShop: "Not always offered",
+    forumSeller: "Uncommon",
+  },
+  {
+    feature: "Patch update speed",
+    zadeyo: "Same-day loader refresh",
+    multiGameShop: "Days to weeks",
+    forumSeller: "Unknown / delayed",
+  },
+  {
+    feature: "Setup support",
+    zadeyo: "24/7 Discord + guides",
+    multiGameShop: "Ticket-only",
+    forumSeller: "DM-only or none",
+  },
+  {
+    feature: "Monthly price",
+    zadeyo: PRICE_MONTHLY,
+    multiGameShop: "$40–$80+",
+    forumSeller: "Opaque / crypto-only",
+  },
+  {
+    feature: "Lifetime price",
+    zadeyo: PRICE_LIFETIME,
+    multiGameShop: "$200–$350+",
+    forumSeller: "Rarely offered",
+  },
+  {
+    feature: "Delivery",
+    zadeyo: "Instant after checkout",
+    multiGameShop: "Manual or delayed",
+    forumSeller: "Manual handoff",
+  },
 ];
 
 export const COMPARISON_VERDICT = [
   "Zadeyo bundles ESP, aimbot, wallhack, radar, triggerbot, recoil control, silent aim, stream-proof mode, and Cloud DMA in one Hunt Showdown cheat loader.",
   "Competitive pricing at $35/month or $150 lifetime with instant delivery and on-site setup guides.",
   "Same-day compatibility updates after Crytek patches — critical when stale loaders break after hotfixes.",
+  "Clearer than multi-game shops with gated tiers and forum sellers with undocumented builds.",
 ];
 
 export const COMPARISON_FAQ = [
@@ -39,6 +92,6 @@ export const COMPARISON_FAQ = [
   {
     question: "Why compare Hunt Showdown cheat providers before buying?",
     answer:
-      "Providers differ on Cloud DMA support, update speed after patches, stream-proof options, and whether ESP and aimbot are bundled. Comparing upfront avoids paying for stale loaders or missing features.",
+      "Multi-game shops and forum sellers differ on Cloud DMA support, update speed after patches, stream-proof options, and whether ESP and aimbot are bundled. Comparing upfront avoids paying for stale loaders or missing features.",
   },
 ];

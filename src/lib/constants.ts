@@ -345,10 +345,10 @@ export const FOOTER_LINKS = {
     { label: "Pricing", href: "/buy/" },
   ],
   guides: [
-    { label: "ESP guide", href: "/blog/hunt-showdown-esp-guide/" },
-    { label: "Radar guide", href: "/blog/radar-and-map-awareness/" },
-    { label: "Cloud DMA guide", href: "/blog/cloud-dma-explained/" },
-    { label: "Anti-cheat safety", href: "/blog/hunt-showdown-anti-cheat-analysis/" },
+    { label: "ESP setup", href: "/blog/hunt-showdown-esp-guide/" },
+    { label: "Wallhack guide", href: "/blog/hunt-showdown-wallhack-guide/" },
+    { label: "DMA vs external", href: "/blog/hunt-showdown-dma-vs-external/" },
+    { label: "Patch updates", href: "/blog/hunt-showdown-cheat-patch-status/" },
   ],
   trust: [
     { label: "Product details", href: "/#product-info" },
