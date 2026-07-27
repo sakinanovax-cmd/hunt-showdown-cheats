@@ -69,7 +69,7 @@ export default function WorldVisuals() {
           </Link>
           {" · "}
           <Link href="/cheats/" className="text-[var(--color-purple-light)] hover:text-[var(--color-text)]">
-            All overlays
+            cheats index
           </Link>
         </p>
       </div>
