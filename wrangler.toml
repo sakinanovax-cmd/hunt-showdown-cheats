@@ -8,3 +8,5 @@ directory = "./out"
 binding = "ASSETS"
 not_found_handling = "404-page"
 html_handling = "auto-trailing-slash"
+# Required so Worker can set charset / www redirect on HTML (assets-first skips Worker).
+run_worker_first = true
