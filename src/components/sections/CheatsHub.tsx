@@ -3,7 +3,7 @@ import CheatCard from "@/components/cheats/CheatCard";
 import { CHEAT_PRODUCTS } from "@/lib/cheats";
 import { PRICE_LIFETIME, PRICE_MONTHLY } from "@/lib/site";
 
-const FEATURED = CHEAT_PRODUCTS.slice(0, 6);
+const FEATURED = CHEAT_PRODUCTS;
 
 export default function CheatsHub() {
   return (

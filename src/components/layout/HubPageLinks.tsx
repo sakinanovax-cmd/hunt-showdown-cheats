@@ -2,6 +2,7 @@ import Link from "next/link";
 
 const HUB_PAGES = [
   { href: "/cheats/", label: "Cheats hub", key: "cheats" as const },
+  { href: "/blog/", label: "Guides & blog", key: "blog" as const },
   { href: "/buy/", label: "Buy plans", key: "buy" as const },
   { href: "/compare/", label: "Compare tools", key: "compare" as const },
   { href: "/faq/", label: "FAQ hub", key: "faq" as const },

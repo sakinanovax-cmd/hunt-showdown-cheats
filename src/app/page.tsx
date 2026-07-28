@@ -15,10 +15,7 @@ import { META_TITLES } from "@/lib/seo-titles";
 import { SITE_PRIMARY_KEYWORD, SITE_SEO_DESCRIPTION, getCanonicalUrl } from "@/lib/site";
 import SeoIntro from "@/components/sections/SeoIntro";
 import {
-  getBlogListSchema,
   getBreadcrumbSchema,
-  getFAQSchema,
-  getProductSchema,
   getWebPageSchema,
 } from "@/lib/seo";
 
@@ -41,9 +38,6 @@ export default function HomePage() {
             path: "/",
           }),
           getBreadcrumbSchema([{ name: SITE_PRIMARY_KEYWORD, url: getCanonicalUrl("/") }]),
-          getProductSchema(),
-          getFAQSchema(),
-          getBlogListSchema(),
         ]}
       />
       <Navbar />

@@ -1,6 +1,6 @@
 import { BLOG_ARTICLES, FAQ_ITEMS, PRICING_PLANS } from "./constants";
 import { CHEAT_PRODUCTS } from "./cheats";
-import { GAMEPLAY_FRAMES, HUNT_IMAGES, VIDEO_POSTER } from "./assets";
+import { GAMEPLAY_FRAMES, HUNT_IMAGES, HUNT_SHOWDOWN_DEMO_VIDEO, VIDEO_POSTER } from "./assets";
 import {
   BLOG_META_DESCRIPTIONS,
   CHEAT_META_DESCRIPTIONS,
@@ -311,7 +311,7 @@ export function getBreadcrumbSchema(items: { name: string; url: string }[]) {
 
 export function getVideoSchema() {
   const thumb = getAbsoluteAssetUrl(VIDEO_POSTER);
-  // embedUrl is enough for Google when a direct mp4 is not always deployed.
+  const contentUrl = getAbsoluteAssetUrl(HUNT_SHOWDOWN_DEMO_VIDEO);
   return {
     "@context": "https://schema.org",
     "@type": "VideoObject",
@@ -320,6 +320,7 @@ export function getVideoSchema() {
     description:
       "Gameplay footage showing Hunt Showdown cheat features including player ESP, wallhack, aimbot, and radar overlay.",
     thumbnailUrl: [thumb, getAbsoluteAssetUrl(HUNT_IMAGES.espOverlay)],
+    contentUrl,
     embedUrl: getCanonicalUrl("/video/"),
     uploadDate: "2026-07-01T12:00:00+00:00",
     duration: "PT2M30S",

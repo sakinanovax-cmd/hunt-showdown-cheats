@@ -20,7 +20,7 @@ import {
 import { ZADEYO_ASSETS } from "@/lib/assets";
 import JsonLd from "@/components/seo/JsonLd";
 import { buildPageMetadata } from "@/lib/metadata";
-import { getBreadcrumbSchema, getFAQSchema, getProductSchema, getWebPageSchema } from "@/lib/seo";
+import { getBreadcrumbSchema, getProductSchema, getWebPageSchema } from "@/lib/seo";
 import { META_DESCRIPTIONS } from "@/lib/seo-descriptions";
 import { META_TITLES } from "@/lib/seo-titles";
 import { DISCLAIMER, getCanonicalUrl, LAST_CONTENT_REVIEW } from "@/lib/site";
@@ -52,7 +52,6 @@ export default function BuyPage() {
             path: "/buy/",
           }),
           getProductSchema(),
-          getFAQSchema(),
           breadcrumbs,
         ]}
       />

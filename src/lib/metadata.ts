@@ -124,7 +124,7 @@ export function buildPageMetadata({
   return {
     title,
     description: metaDescription,
-    keywords: keywords ?? SEO_KEYWORDS,
+    ...(keywords?.length ? { keywords } : {}),
     alternates: {
       canonical,
       languages: {

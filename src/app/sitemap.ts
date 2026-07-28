@@ -7,6 +7,15 @@ export const dynamic = "force-static";
 
 const LAST_REVIEW_DATE = new Date(`${LAST_CONTENT_REVIEW.replace(" ", " 1, ")}`);
 
+function latestBlogModified(): Date {
+  let latest = LAST_REVIEW_DATE.getTime();
+  for (const article of BLOG_ARTICLES) {
+    const t = new Date(article.publishedAt).getTime();
+    if (t > latest) latest = t;
+  }
+  return new Date(latest);
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const blogUrls = BLOG_ARTICLES.map((article) => ({
     url: getCanonicalUrl(`/blog/${article.slug}/`),
@@ -37,7 +46,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: getCanonicalUrl("/blog/"),
-      lastModified: LAST_REVIEW_DATE,
+      lastModified: latestBlogModified(),
       changeFrequency: "weekly",
       priority: 0.8,
     },
