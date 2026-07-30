@@ -20,3 +20,4 @@ function run(command, args) {
 
 run("node", [join("scripts", "ensure-cf-asset-limits.mjs")]);
 run("npx", ["wrangler", "deploy"]);
+run("node", [join("scripts", "ping-sitemap.mjs")]);

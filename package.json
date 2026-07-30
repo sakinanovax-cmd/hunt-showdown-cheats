@@ -12,6 +12,7 @@
     "compress:videos": "node scripts/compress-videos-for-cf.mjs",
     "build:gh-pages": "cross-env GITHUB_PAGES=true next build",
     "deploy": "node scripts/cf-deploy.mjs",
+    "ping:sitemap": "node scripts/ping-sitemap.mjs",
     "start": "next start",
     "lint": "eslint"
   },

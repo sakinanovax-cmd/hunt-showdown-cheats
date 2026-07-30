@@ -1,0 +1,25 @@
+---
+description: Huntcheats.com PRD — SEO, Zadeyo theme, ranking constraints
+alwaysApply: true
+---
+
+# huntcheats.com PRD
+
+**Product:** Independent Zadeyo resource for Hunt Showdown cheats at `https://huntcheats.com`. Static Next.js → Cloudflare Workers. Checkout: Zadeyo (`$35/mo`, `$150 lifetime`).
+
+**Primary keyword:** `Hunt Showdown cheats`. Secondary: ESP, aimbot, wallhack, radar, Cloud DMA.
+
+**Goal:** Rank page 1 for cheat-intent queries. Convert via feature docs → `/buy/` → Zadeyo checkout.
+
+**Voice:** Dark bayou / purple premium UI. Factual, no “undetectable” or zero-ban claims. Always disclose ban risk + not affiliated with Crytek.
+
+**SEO rules:**
+- One Product schema on `/buy/` only; FAQPage on `/faq/` only; no duplicate JSON-LD on home
+- Unique title + meta per URL (`seo-titles.ts`, `seo-descriptions.ts`); primary keyword first
+- Canonical `https://huntcheats.com/` with trailing slashes; charset UTF-8 via Worker
+- Internal links: hubs, all 9 cheat pages, blog guides, compare, footer
+- No social share buttons; no keyword stuffing; minimal UI churn
+
+**Out of scope:** Crytek affiliation, Lighthouse 100 chase, heavy redesigns.
+
+**Deploy:** `npm run build` then `npm run deploy`. After deploy: ping sitemap + request indexing in GSC for priority URLs.

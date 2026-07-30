@@ -32,6 +32,7 @@ export default function RootLayout({
         />
         <link rel="preconnect" href="https://zadeyo.com" />
         <link rel="dns-prefetch" href="https://zadeyo.com" />
+        <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
         <meta name="geo.region" content="US" />
         <meta httpEquiv="content-language" content="en" />
       </head>

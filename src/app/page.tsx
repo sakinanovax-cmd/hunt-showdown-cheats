@@ -11,6 +11,7 @@ import BlogPreview from "@/components/sections/BlogPreview";
 import CheatsHub from "@/components/sections/CheatsHub";
 import FAQ from "@/components/sections/FAQ";
 import { buildPageMetadata } from "@/lib/metadata";
+import { SEO_KEYWORDS } from "@/lib/seo";
 import { META_TITLES } from "@/lib/seo-titles";
 import { SITE_PRIMARY_KEYWORD, SITE_SEO_DESCRIPTION, getCanonicalUrl } from "@/lib/site";
 import SeoIntro from "@/components/sections/SeoIntro";
@@ -25,6 +26,7 @@ export const metadata: Metadata = buildPageMetadata({
   path: "/",
   imageAlt: "Hunt Showdown cheats — ESP wallhack gameplay screenshot",
   imagePath: "/images/hunt/esp-overlay.webp",
+  keywords: SEO_KEYWORDS,
 });
 
 export default function HomePage() {

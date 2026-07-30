@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import PageMain from "@/components/layout/PageMain";
+import HubPageLinks from "@/components/layout/HubPageLinks";
 import SectionHeading from "@/components/ui/SectionHeading";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 import BlogCard from "@/components/ui/BlogCard";
@@ -49,6 +50,7 @@ export default function BlogPage() {
               { label: "Cheat Guides" },
             ]}
           />
+          <HubPageLinks current="blog" />
           <SectionHeading
             as="h1"
             eyebrow="Guides"

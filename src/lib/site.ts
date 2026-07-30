@@ -10,7 +10,7 @@ export const SITE_TAGLINE = "Hunt Showdown Cheats — ESP, Aimbot & Wallhack";
 export const SITE_SEO_DESCRIPTION = META_DESCRIPTIONS.home;
 export const SITE_SEO_HEADLINE =
   "Hunt Showdown cheats for competitive bayou hunts — player ESP, aimbot, wallhack, radar, triggerbot, and Cloud DMA with instant Zadeyo delivery.";
-export const LAST_CONTENT_REVIEW = "July 2026";
+export const LAST_CONTENT_REVIEW = "July 30, 2026";
 
 function normalizeBaseUrl(url: string): string {
   return url.replace(/\/+$/, "");
