@@ -58,23 +58,89 @@ export const CHEAT_SEO_BODY: Record<string, CheatSeoBody> = {
     paragraphs: [
       "Hunt: Showdown fights reward controlled aim more than spray. An adjustable aimbot with smoothness, FOV, bone selection, and visibility checks helps you win peeks without looking like a rage toggle.",
       "Zadeyo aimbot works with lever-actions, shotguns, and scoped rifles, and stacks with triggerbot, silent aim, and recoil control when you want a full combat suite. Instant delivery after checkout — monthly or lifetime.",
-      "Review the buy page for plan pricing, then watch the demo video to see targeting behavior in real bayou gameplay before you commit.",
+    ],
+    sections: [
+      {
+        heading: "Aimbot settings that look natural in Hunt",
+        paragraphs: [
+          "Start with a narrow FOV (15–25°) and higher smoothness so snaps stay subtle on lever-actions and Sparks. Widen FOV only when you pair aimbot with ESP and already know where hunters are — information first, aim second.",
+          "Bone priority matters: head for close shotgun pushes, upper chest for mid-range Winfield fights. Visibility checks stop the aimbot from tracking through solid geometry when ESP is off.",
+          "Combine with recoil control on automatic weapons and triggerbot on hold angles. Rage FOV and zero smoothness get reports fast in a game with one-shot headshots.",
+        ],
+      },
+      {
+        heading: "When to use aimbot vs ESP or radar",
+        paragraphs: [
+          "Most hunters searching Hunt Showdown aimbot still lose without ESP — you cannot aim at what you never saw. Run player ESP or wallhack first, radar second, aimbot last.",
+          "Banish and extract fights are aimbot moments: you know a hunter is close and need clean headshots under pressure. Open-field rotations are radar + ESP moments before you toggle combat assists.",
+          "Compare the full suite on the cheats hub and provider comparison page before you buy. Zadeyo bundles aimbot with ESP, wallhack, and radar from $35/month.",
+        ],
+      },
+      {
+        heading: "Buy Hunt Showdown aimbot from Zadeyo",
+        paragraphs: [
+          "Open the buy page for $35/month or $150 lifetime, or checkout on Zadeyo for instant loader access. Watch the demo video to see targeting in real bayou gameplay before you commit.",
+          "After install, test smoothness in a short session before expensive loadouts. Read the anti-cheat safety guide — all Hunt Showdown cheats carry ban risk; update loaders after every Crytek patch.",
+        ],
+      },
     ],
   },
   wallhack: {
     heading: "Wallhack vision for compounds and crypts",
     paragraphs: [
       "Wallhack extends ESP through barns, crypts, and compound walls so you never push a doorway blind. Snap lines and skeleton layers make hunter poses readable even in torchlight or pitch black.",
-      "Use wallhack during boss banish to spot third parties, or on extract routes when teams camp stairs and windows. Zadeyo includes wallhack in the full suite with Cloud DMA and stream-proof options.",
-      "See price and checkout options on the buy page, or open the dedicated ESP and radar pages to plan a complete awareness stack.",
+      "Zadeyo includes wallhack in the full Hunt Showdown cheat suite with Cloud DMA and stream-proof options from $35/month or $150 lifetime.",
+    ],
+    sections: [
+      {
+        heading: "Best wallhack use cases in the bayou",
+        paragraphs: [
+          "Compound clears: see hunters on stairs and in side rooms before you commit a doorway. Boss banish: spot third parties rotating on your sound before they swing.",
+          "Extract camps: wallhack confirms whether a hold is one hunter or a full trio behind wooden walls. Night maps: raise overlay opacity when torch light hides movement.",
+        ],
+      },
+      {
+        heading: "Wallhack vs ESP — same loader, different layers",
+        paragraphs: [
+          "Wallhack usually means through-wall silhouettes. ESP adds boxes, health, and distance. Zadeyo ships both in one Hunt Showdown cheat — toggle layers instead of buying separate tools.",
+          "Read the wallhack guide for compound-specific tips, then open the ESP page for box and skeleton settings. Pair with radar for teams still outside your building.",
+        ],
+      },
+      {
+        heading: "Price and checkout",
+        paragraphs: [
+          "Wallhack is included in every plan — see the buy page for monthly and lifetime pricing. Instant Zadeyo delivery after checkout with Discord setup help and patch-ready updates.",
+        ],
+      },
     ],
   },
   radar: {
     heading: "Radar for banish and extract control",
     paragraphs: [
       "Radar shows hunter positions across the map so you can time banish, rotate away from third parties, and pick safer extracts. It is the map-layer companion to wall ESP — local vision plus global awareness.",
-      "Zadeyo radar supports adjustable range and opacity, boss and extract markers, and Cloud DMA delivery with Windows security features left ON. Included from $35/mo with the rest of the suite.",
-      "Read the radar map-awareness guide for practical rotations, then buy on Zadeyo when you are ready for instant loader access.",
+      "Zadeyo radar supports adjustable range and opacity, boss and extract markers, and Cloud DMA delivery with Windows security features left ON.",
+    ],
+    sections: [
+      {
+        heading: "Radar settings for Hunt Showdown",
+        paragraphs: [
+          "Use a medium radar range during banish so you see teams closing from multiple angles. Shrink range in dense PvP lobbies to reduce clutter.",
+          "Boss and extract markers help you plan rotations without tabbing out. Opacity low enough to read the minimap, high enough to catch blips during fights.",
+        ],
+      },
+      {
+        heading: "Radar + ESP stack",
+        paragraphs: [
+          "ESP and wallhack for the building you are in; radar for everyone still outside. That split stops most third-party wipes during banish.",
+          "Read the radar map-awareness guide for extract habits, then compare providers on the comparison page before checkout.",
+        ],
+      },
+      {
+        heading: "Buy radar with the full cheat suite",
+        paragraphs: [
+          "Radar is bundled with ESP, aimbot, and wallhack from $35/month on Zadeyo. Instant loader delivery — no separate radar-only SKU required.",
+        ],
+      },
     ],
   },
   triggerbot: {

@@ -55,6 +55,24 @@ export default function SeoIntro() {
               Plans &amp; pricing
             </Link>
             <Link
+              href="/compare/"
+              className="text-sm font-medium text-[var(--color-text-secondary)] underline-offset-2 hover:text-[var(--color-purple-light)] hover:underline"
+            >
+              Compare providers
+            </Link>
+            <Link
+              href="/cheats/aimbot/"
+              className="text-sm font-medium text-[var(--color-text-secondary)] underline-offset-2 hover:text-[var(--color-purple-light)] hover:underline"
+            >
+              Aimbot page
+            </Link>
+            <Link
+              href="/blog/hunt-showdown-wallhack-guide/"
+              className="text-sm font-medium text-[var(--color-text-secondary)] underline-offset-2 hover:text-[var(--color-purple-light)] hover:underline"
+            >
+              Wallhack guide
+            </Link>
+            <Link
               href="/faq/"
               className="text-sm font-medium text-[var(--color-text-secondary)] underline-offset-2 hover:text-[var(--color-purple-light)] hover:underline"
             >
