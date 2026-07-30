@@ -19,5 +19,6 @@ function run(command, args) {
 }
 
 run("node", [join("scripts", "ensure-cf-asset-limits.mjs")]);
-run("npx", ["wrangler", "deploy"]);
+// Use project-local wrangler so Windows optional deps (workerd-windows-64) install correctly.
+run("npm", ["exec", "wrangler", "--", "deploy"]);
 run("node", [join("scripts", "ping-sitemap.mjs")]);
