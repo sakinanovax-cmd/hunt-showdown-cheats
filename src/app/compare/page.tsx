@@ -15,7 +15,7 @@ import { COMPARISON_FAQ, COMPARISON_ROWS, COMPARISON_VERDICT } from "@/lib/compa
 import { buildPageMetadata } from "@/lib/metadata";
 import { META_DESCRIPTIONS } from "@/lib/seo-descriptions";
 import { META_TITLES } from "@/lib/seo-titles";
-import { getBreadcrumbSchema, getFAQSchema, getWebPageSchema } from "@/lib/seo";
+import { getBreadcrumbSchema, getWebPageSchema } from "@/lib/seo";
 import { getCanonicalUrl, PRICE_LIFETIME, PRICE_MONTHLY, ZADEYO_CHECKOUT_URL } from "@/lib/site";
 import { Check } from "lucide-react";
 
@@ -51,7 +51,6 @@ export default function ComparePage() {
             description: META_DESCRIPTIONS.compare,
             path: "/compare/",
           }),
-          getFAQSchema(COMPARISON_FAQ),
           breadcrumbs,
         ]}
       />

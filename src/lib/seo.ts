@@ -3,7 +3,6 @@ import { CHEAT_PRODUCTS } from "./cheats";
 import { GAMEPLAY_FRAMES, HUNT_IMAGES, HUNT_SHOWDOWN_DEMO_VIDEO, VIDEO_POSTER } from "./assets";
 import {
   BLOG_META_DESCRIPTIONS,
-  CHEAT_META_DESCRIPTIONS,
   META_DESCRIPTIONS,
 } from "./seo-descriptions";
 import {
@@ -174,6 +173,9 @@ const PRODUCT_IMAGES = [
 
 export function getProductSchema() {
   const monthly = PRICING_PLANS.find((p) => p.name === "Monthly") ?? PRICING_PLANS[0];
+  const lifetime = PRICING_PLANS.find((p) => p.name === "Lifetime") ?? PRICING_PLANS[1];
+  const lowPrice = Number(monthly.price.replace("$", ""));
+  const highPrice = Number(lifetime.price.replace("$", ""));
   return {
     "@context": "https://schema.org",
     "@type": "Product",
@@ -187,32 +189,16 @@ export function getProductSchema() {
     brand: { "@type": "Brand", name: SITE_NAME },
     url: getCanonicalUrl("/buy/"),
     image: PRODUCT_IMAGES,
-    // Single Offer (not AggregateOffer) — required for Merchant listings.
-    offers: buildOffer(monthly),
-  };
-}
-
-export function getCheatProductSchema(cheat: {
-  name: string;
-  description: string;
-  slug: string;
-  image: string;
-  shortName: string;
-}) {
-  const monthly = PRICING_PLANS.find((p) => p.name === "Monthly") ?? PRICING_PLANS[0];
-  return {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "@id": `${getCanonicalUrl(`/cheats/${cheat.slug}/`)}#product`,
-    name: cheat.name,
-    description: CHEAT_META_DESCRIPTIONS[cheat.slug] ?? cheat.description,
-    url: getCanonicalUrl(`/cheats/${cheat.slug}/`),
-    image: [getAbsoluteAssetUrl(cheat.image), ...PRODUCT_IMAGES],
-    category: "Software > Game Utilities",
-    sku: `zadeyo-hunt-${cheat.slug}`,
-    mpn: `ZADEYO-HUNT-${cheat.shortName.toUpperCase().replace(/\s+/g, "-")}`,
-    brand: { "@type": "Brand", name: SITE_NAME },
-    offers: buildOffer(monthly, `${cheat.shortName} — ${monthly.name}`),
+    offers: {
+      "@type": "AggregateOffer",
+      lowPrice,
+      highPrice,
+      priceCurrency: "USD",
+      offerCount: 2,
+      availability: "https://schema.org/InStock",
+      url: ZADEYO_CHECKOUT_URL,
+      offers: [buildOffer(monthly), buildOffer(lifetime)],
+    },
   };
 }
 

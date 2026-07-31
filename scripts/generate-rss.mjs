@@ -9,7 +9,28 @@ import { fileURLToPath } from "node:url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, "..");
 
+/** Load `.env.production` so prebuild RSS uses production URLs (Next.js does this at build time). */
+function loadEnvProduction() {
+  try {
+    const envPath = join(root, ".env.production");
+    const content = readFileSync(envPath, "utf8");
+    for (const line of content.split("\n")) {
+      const trimmed = line.trim();
+      if (!trimmed || trimmed.startsWith("#")) continue;
+      const eq = trimmed.indexOf("=");
+      if (eq === -1) continue;
+      const key = trimmed.slice(0, eq).trim();
+      if (process.env[key]) continue;
+      const raw = trimmed.slice(eq + 1).trim();
+      process.env[key] = raw.replace(/^["']|["']$/g, "");
+    }
+  } catch {
+    /* optional — fall through to other URL sources */
+  }
+}
+
 function resolveSiteUrl() {
+  loadEnvProduction();
   if (process.env.NEXT_PUBLIC_SITE_URL) {
     return process.env.NEXT_PUBLIC_SITE_URL.replace(/\/+$/, "");
   }
@@ -26,7 +47,7 @@ function resolveSiteUrl() {
     const owner = process.env.GITHUB_ACTOR ?? "github";
     return `https://${owner}.github.io/${repo}`;
   }
-  return "http://localhost:8080";
+  return "https://huntcheats.com";
 }
 
 const siteUrl = resolveSiteUrl();

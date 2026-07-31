@@ -19,21 +19,31 @@ function run(command, args, { allowFail = false } = {}) {
   return result.status ?? 1;
 }
 
-function deployWithRetry(maxAttempts = 3) {
+function sleepSeconds(sec) {
+  console.log(`Waiting ${sec}s...\n`);
+  spawnSync("powershell", ["-Command", `Start-Sleep -Seconds ${sec}`], {
+    cwd: root,
+    stdio: "inherit",
+    shell: true,
+  });
+}
+
+function deployWithRetry(maxAttempts = 5) {
+  const waitSchedule = [0, 30, 45, 60, 90];
   for (let attempt = 1; attempt <= maxAttempts; attempt++) {
     if (attempt > 1) {
-      const waitSec = attempt * 15;
-      console.log(`\nRetry ${attempt}/${maxAttempts} in ${waitSec}s (Cloudflare API timeout)...\n`);
-      spawnSync("powershell", ["-Command", `Start-Sleep -Seconds ${waitSec}`], {
-        cwd: root,
-        stdio: "inherit",
-        shell: true,
-      });
+      const waitSec = waitSchedule[attempt - 1] ?? 120;
+      console.log(`\nRetry ${attempt}/${maxAttempts} (Cloudflare API timeout)...`);
+      sleepSeconds(waitSec);
     }
     const status = run("npm", ["exec", "wrangler", "--", "deploy"], { allowFail: true });
     if (status === 0) return;
   }
-  console.error("\nDeploy failed after retries. Check internet/VPN/firewall, then run: npm run deploy\n");
+  console.error(
+    "\nDeploy failed after retries (Cloudflare API timeout).\n" +
+      "Try: turn off VPN, use mobile hotspot, or run again in a few minutes:\n" +
+      "  npm exec wrangler -- deploy\n",
+  );
   process.exit(1);
 }
 

@@ -38,5 +38,8 @@
   },
   "engines": {
     "node": ">=20"
+  },
+  "allowScripts": {
+    "workerd@1.20260730.1": true
   }
 }

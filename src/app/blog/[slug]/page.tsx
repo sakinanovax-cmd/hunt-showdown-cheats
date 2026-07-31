@@ -56,7 +56,7 @@ export default async function BlogArticlePage({ params }: Props) {
       <JsonLd data={[getArticleSchema(article), breadcrumbs]} />
       <Navbar />
       <PageMain>
-        <article className="container-dnd max-w-3xl" itemScope itemType="https://schema.org/Article">
+        <article className="container-dnd max-w-3xl">
           <Breadcrumbs
             items={[
               { label: "Hunt Showdown Cheats", href: "/" },
@@ -66,14 +66,11 @@ export default async function BlogArticlePage({ params }: Props) {
           />
 
           <p className="section-label mb-4">{article.category}</p>
-          <h1
-            className="display-heading mb-6 text-3xl text-[var(--color-text)] md:text-4xl lg:text-5xl"
-            itemProp="headline"
-          >
+          <h1 className="display-heading mb-6 text-3xl text-[var(--color-text)] md:text-4xl lg:text-5xl">
             {article.title}
           </h1>
           <div className="mb-10 flex items-center gap-4 font-mono-label text-[var(--color-text-muted)]">
-            <time dateTime={article.publishedAt} itemProp="datePublished">
+            <time dateTime={article.publishedAt}>
               {article.date}
             </time>
             <span className="flex items-center gap-1">
@@ -94,7 +91,7 @@ export default async function BlogArticlePage({ params }: Props) {
             />
           </div>
 
-          <div className="prose-body space-y-6" itemProp="articleBody">
+          <div className="prose-body space-y-6">
             {article.content.map((paragraph, i) => (
               <p key={`intro-${i}`} className="text-lg text-[var(--color-text-secondary)]">
                 <BlogRichText text={paragraph} />

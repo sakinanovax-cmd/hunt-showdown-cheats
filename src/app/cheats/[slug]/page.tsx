@@ -12,7 +12,7 @@ import { getCheatSeoBody } from "@/lib/cheat-seo-body";
 import { buildPageMetadata } from "@/lib/metadata";
 import { getCheatMetaDescription } from "@/lib/seo-descriptions";
 import { getCheatMetaTitle } from "@/lib/seo-titles";
-import { getBreadcrumbSchema, getCheatProductSchema, getWebPageSchema } from "@/lib/seo";
+import { getBreadcrumbSchema, getWebPageSchema } from "@/lib/seo";
 import { getCanonicalUrl } from "@/lib/site";
 import { Check } from "lucide-react";
 import type { Metadata } from "next";
@@ -65,7 +65,6 @@ export default async function CheatPage({ params }: Props) {
             description: metaDescription,
             path: `/cheats/${slug}/`,
           }),
-          getCheatProductSchema(cheat),
           getBreadcrumbSchema([
             { name: "Hunt Showdown Cheats", url: getCanonicalUrl("/") },
             { name: "All Cheats", url: getCanonicalUrl("/cheats/") },

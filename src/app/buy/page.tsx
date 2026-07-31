@@ -32,6 +32,12 @@ export const metadata: Metadata = buildPageMetadata({
   path: "/buy/",
   imageAlt: "Hunt Showdown cheats product preview — ESP, aimbot and wallhack menu",
   imagePath: ZADEYO_ASSETS.screenshotBanner,
+  keywords: [
+    "buy Hunt Showdown cheats",
+    "Hunt Showdown cheat price",
+    "Hunt Showdown cheats $35",
+    "Zadeyo Hunt Showdown cheats",
+  ],
 });
 
 export default function BuyPage() {

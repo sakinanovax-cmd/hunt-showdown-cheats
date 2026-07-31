@@ -22,6 +22,14 @@ export const metadata: Metadata = buildPageMetadata({
   path: "/cheats/",
   imageAlt: "Hunt Showdown cheat suite — all features",
   imagePath: "/images/hunt/esp-overlay.png",
+  keywords: [
+    "Hunt Showdown cheats",
+    "Hunt Showdown ESP cheat",
+    "Hunt Showdown aimbot cheat",
+    "Hunt Showdown wallhack cheat",
+    "Hunt Showdown radar cheat",
+    "buy Hunt Showdown cheats",
+  ],
 });
 
 export default function CheatsIndexPage() {
