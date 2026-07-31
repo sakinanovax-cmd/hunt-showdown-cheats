@@ -1,5 +1,5 @@
 /**
- * SERP-optimized title tags — primary keyword first, ~50 chars before layout "| Zadeyo" suffix.
+ * SERP-optimized title tags — primary keyword first, ~50 chars.
  */
 
 export const META_TITLES = {
@@ -46,4 +46,4 @@ export function getBlogMetaTitle(slug: string, fallback: string): string {
 }
 
 /** Full default title for root layout (includes brand). */
-export const DEFAULT_LAYOUT_TITLE = `${META_TITLES.home} | Zadeyo`;
+export const DEFAULT_LAYOUT_TITLE = META_TITLES.home;

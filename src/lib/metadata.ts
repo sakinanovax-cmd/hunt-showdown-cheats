@@ -39,7 +39,7 @@ export const defaultMetadata: Metadata = {
   metadataBase: new URL(`${SITE_URL}/`),
   title: {
     default: DEFAULT_LAYOUT_TITLE,
-    template: "%s | Zadeyo",
+    template: "%s",
   },
   description: SITE_SEO_DESCRIPTION,
   keywords: SEO_KEYWORDS,
@@ -146,7 +146,7 @@ export function buildPageMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: `${title} | ${SITE_NAME}`,
+      title,
       description: metaDescription,
       images: [ogImageUrl],
     },
