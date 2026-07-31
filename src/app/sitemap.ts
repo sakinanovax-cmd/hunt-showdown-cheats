@@ -5,7 +5,8 @@ import { getCanonicalUrl, LAST_CONTENT_REVIEW } from "@/lib/site";
 
 export const dynamic = "force-static";
 
-const LAST_REVIEW_DATE = new Date(`${LAST_CONTENT_REVIEW.replace(" ", " 1, ")}`);
+/** Parses "July 31, 2026" — do not use .replace(" ", " 1, ") (breaks day ≥10 → year 2031). */
+const LAST_REVIEW_DATE = new Date(LAST_CONTENT_REVIEW);
 
 function latestBlogModified(): Date {
   let latest = LAST_REVIEW_DATE.getTime();
