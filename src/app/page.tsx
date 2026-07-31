@@ -35,7 +35,7 @@ export default function HomePage() {
       <JsonLd
         data={[
           getWebPageSchema({
-            name: `${SITE_PRIMARY_KEYWORD}: Best Hunt Showdown Cheats 2026`,
+            name: META_TITLES.home,
             description: SITE_SEO_DESCRIPTION,
             path: "/",
           }),

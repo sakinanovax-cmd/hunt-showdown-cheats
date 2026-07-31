@@ -12,7 +12,7 @@ export default function PricingPreview() {
           Hunt Showdown Cheats — Plans &amp; Price
         </p>
         <p className="prose-body mx-auto mb-10 max-w-2xl text-center">
-          Buy Hunt Showdown cheats on Zadeyo — monthly or lifetime access with full ESP, aimbot, wallhack,
+          Buy Hunt Showdown cheats online — monthly or lifetime access with full ESP, aimbot, wallhack,
           radar, and Cloud DMA. Instant loader delivery after checkout.
         </p>
         <div className="mx-auto grid max-w-3xl gap-6 md:grid-cols-2">
@@ -38,7 +38,7 @@ export default function PricingPreview() {
                 ))}
               </ul>
               <PurchaseButton className="w-full justify-center">
-                Buy on Zadeyo — {plan.price}
+                Buy Hunt Showdown Cheats — {plan.price}
               </PurchaseButton>
             </article>
           ))}

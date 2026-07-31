@@ -36,6 +36,8 @@ export interface BlogArticle {
   content: string[];
   sections: BlogSection[];
   relatedSlugs: string[];
+  /** Three cheat landing pages linked from every guide (internal SEO). */
+  relatedCheatSlugs: string[];
 }
 
 export interface InfoSection {

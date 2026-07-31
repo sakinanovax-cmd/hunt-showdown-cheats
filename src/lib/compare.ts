@@ -2,7 +2,7 @@ import { PRICE_LIFETIME, PRICE_MONTHLY } from "./site";
 
 export type ComparisonRow = {
   feature: string;
-  zadeyo: string;
+  huntCheats: string;
   multiGameShop: string;
   forumSeller: string;
 };
@@ -11,83 +11,114 @@ export type ComparisonRow = {
 export const COMPARISON_ROWS: ComparisonRow[] = [
   {
     feature: "Player ESP & wallhack",
-    zadeyo: "Full suite included",
+    huntCheats: "Full suite included",
     multiGameShop: "Often partial / tier-gated",
     forumSeller: "Varies; docs rare",
   },
   {
     feature: "Aimbot & triggerbot",
-    zadeyo: "Included",
+    huntCheats: "Included",
     multiGameShop: "Extra tier or missing",
     forumSeller: "Unclear feature list",
   },
   {
     feature: "Radar overlay",
-    zadeyo: "Included",
+    huntCheats: "Included",
     multiGameShop: "Add-on or absent",
     forumSeller: "Rarely documented",
   },
   {
     feature: "Cloud DMA (HVCI ON)",
-    zadeyo: "Supported",
+    huntCheats: "Supported",
     multiGameShop: "Rare or disabled",
     forumSeller: "Usually unsupported",
   },
   {
     feature: "Stream-proof mode",
-    zadeyo: "Included",
+    huntCheats: "Included",
     multiGameShop: "Not always offered",
     forumSeller: "Uncommon",
   },
   {
     feature: "Patch update speed",
-    zadeyo: "Same-day loader refresh",
+    huntCheats: "Same-day loader refresh",
     multiGameShop: "Days to weeks",
     forumSeller: "Unknown / delayed",
   },
   {
     feature: "Setup support",
-    zadeyo: "24/7 Discord + guides",
+    huntCheats: "24/7 Discord + guides",
     multiGameShop: "Ticket-only",
     forumSeller: "DM-only or none",
   },
   {
     feature: "Monthly price",
-    zadeyo: PRICE_MONTHLY,
+    huntCheats: PRICE_MONTHLY,
     multiGameShop: "$40–$80+",
     forumSeller: "Opaque / crypto-only",
   },
   {
     feature: "Lifetime price",
-    zadeyo: PRICE_LIFETIME,
+    huntCheats: PRICE_LIFETIME,
     multiGameShop: "$200–$350+",
     forumSeller: "Rarely offered",
   },
   {
     feature: "Delivery",
-    zadeyo: "Instant after checkout",
+    huntCheats: "Instant after checkout",
     multiGameShop: "Manual or delayed",
     forumSeller: "Manual handoff",
+  },
+  {
+    feature: "Silent aim & recoil control",
+    huntCheats: "Included",
+    multiGameShop: "Rarely bundled",
+    forumSeller: "Not documented",
+  },
+  {
+    feature: "Triggerbot",
+    huntCheats: "Included",
+    multiGameShop: "Extra tier",
+    forumSeller: "Varies",
+  },
+  {
+    feature: "Lifetime updates",
+    huntCheats: "Included ($150)",
+    multiGameShop: "Extra fee",
+    forumSeller: "Uncommon",
+  },
+  {
+    feature: "Public status page",
+    huntCheats: "Live feature status",
+    multiGameShop: "Rare",
+    forumSeller: "None",
+  },
+  {
+    feature: "Setup guides per feature",
+    huntCheats: "9 cheat pages + blog",
+    multiGameShop: "Generic FAQ",
+    forumSeller: "DM-only help",
   },
 ];
 
 export const COMPARISON_VERDICT = [
-  "Zadeyo bundles ESP, aimbot, wallhack, radar, triggerbot, recoil control, silent aim, stream-proof mode, and Cloud DMA in one Hunt Showdown cheat loader.",
+  "Hunt Showdown cheats bundle ESP, aimbot, wallhack, radar, triggerbot, recoil control, silent aim, stream-proof mode, and Cloud DMA in one Hunt Showdown cheat loader.",
   "Competitive pricing at $35/month or $150 lifetime with instant delivery and on-site setup guides.",
   "Same-day compatibility updates after Crytek patches — critical when stale loaders break after hotfixes.",
   "Clearer than multi-game shops with gated tiers and forum sellers with undocumented builds.",
+  "Public cheat status page with live ESP, aimbot, and loader version after every Crytek patch.",
 ];
 
 export const COMPARISON_FAQ = [
   {
     question: "What are the best Hunt Showdown cheats in 2026?",
     answer:
-      "The best Hunt Showdown cheats in 2026 combine full ESP, aimbot, wallhack, radar, Cloud DMA support, fast patch updates, and reliable support. Zadeyo offers all of these from $35/month or $150 lifetime with instant delivery.",
+      "The best Hunt Showdown cheats in 2026 combine full ESP, aimbot, wallhack, radar, Cloud DMA support, fast patch updates, and reliable support. Hunt Showdown cheats offer all of these from $35/month or $150 lifetime with instant delivery.",
   },
   {
     question: "How much do Hunt Showdown cheats cost?",
     answer:
-      "Zadeyo Hunt Showdown cheats cost $35 per month or $150 for lifetime access. That includes the full feature suite — ESP, aimbot, wallhack, radar, and Cloud DMA — with instant loader delivery after checkout.",
+      "Hunt Showdown cheats cost $35 per month or $150 for lifetime access. That includes the full feature suite — ESP, aimbot, wallhack, radar, and Cloud DMA — with instant loader delivery after checkout.",
   },
   {
     question: "Why compare Hunt Showdown cheat providers before buying?",

@@ -16,7 +16,7 @@ export const SITE_LANGUAGES = [
 export type SiteLanguageCode = (typeof SITE_LANGUAGES)[number]["code"];
 
 export const DEFAULT_LANGUAGE: SiteLanguageCode = "en";
-export const LANGUAGE_STORAGE_KEY = "zadeyo-lang";
+export const LANGUAGE_STORAGE_KEY = "huntcheats-lang";
 
 export function getLanguageByCode(code: string) {
   return SITE_LANGUAGES.find((lang) => lang.code === code) ?? SITE_LANGUAGES[0];

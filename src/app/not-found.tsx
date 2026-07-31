@@ -25,7 +25,7 @@ export default function NotFound() {
           </h1>
           <p className="prose-body mx-auto mb-8 max-w-lg">
             This page does not exist. Return to our Hunt Showdown cheats homepage, read setup guides, or
-            buy on Zadeyo.
+            buy Hunt Showdown cheats.
           </p>
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
@@ -40,7 +40,7 @@ export default function NotFound() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              Buy on Zadeyo
+              Buy Hunt Showdown Cheats
             </a>
             <Link
               href="/blog/"

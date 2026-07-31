@@ -16,7 +16,7 @@ export const CHEAT_SEO_BODY: Record<string, CheatSeoBody> = {
     heading: "Hunt Showdown ESP cheat — full buyer guide",
     paragraphs: [
       "Hunt Showdown ESP is the most searched cheat for bayou PvP. Fog, dark compounds, and vertical barns hide threats until it is too late — player boxes, health bars, distance tags, and skeleton wallhack reverse that information gap.",
-      "Zadeyo ESP ships in every plan from $35/month or $150 lifetime with stream-proof mode and patch-ready loader updates after Crytek releases. Pair it with radar for map rotations and aimbot for the fights you choose to take.",
+      "Hunt Showdown ESP ships in every plan from $35/month or $150 lifetime with stream-proof mode and patch-ready loader updates after Crytek releases. Pair it with radar for map rotations and aimbot for the fights you choose to take.",
     ],
     sections: [
       {
@@ -38,15 +38,15 @@ export const CHEAT_SEO_BODY: Record<string, CheatSeoBody> = {
       {
         heading: "ESP vs wallhack vs radar — what to buy",
         paragraphs: [
-          "Wallhack usually means silhouettes through geometry. ESP adds readable data — distance, health, skeleton. Radar adds map-level blips outside your current compound. Zadeyo bundles all three in one Hunt Showdown cheat loader.",
+          "Wallhack usually means silhouettes through geometry. ESP adds readable data — distance, health, skeleton. Radar adds map-level blips outside your current compound. Hunt Showdown cheats bundle all three in one Hunt Showdown cheat loader.",
           "If you only buy one awareness tool, choose ESP. Add radar when you die to third parties you never heard. Add aimbot after your information game is stable — aim assists do not fix bad rotations.",
           "Compare providers on price, Cloud DMA support, and patch update speed before checkout. Stale ESP after a Crytek hotfix is more expensive than a clear monthly plan.",
         ],
       },
       {
-        heading: "How to buy Hunt Showdown ESP from Zadeyo",
+        heading: "How to buy Hunt Showdown ESP online",
         paragraphs: [
-          "Open the buy page for $35/month or $150 lifetime pricing, or go straight to Zadeyo checkout for instant loader delivery. Cloud DMA setup stays available if you need HVCI and Secure Boot left ON.",
+          "Open the buy page for $35/month or $150 lifetime pricing, or go straight to secure checkout for instant loader delivery. Cloud DMA setup stays available if you need HVCI and Secure Boot left ON.",
           "After install, enable Player ESP first, test colors in a short session, then add boss and loot layers. Read the ESP setup guide and anti-cheat safety notes before taking expensive hunters into ranked lobbies.",
           "All Hunt Showdown cheats carry ban risk. Keep the loader updated after every game patch and avoid rage settings right after hotfixes when detection patterns often change.",
         ],
@@ -57,7 +57,7 @@ export const CHEAT_SEO_BODY: Record<string, CheatSeoBody> = {
     heading: "Hunt Showdown aimbot built for high TTK",
     paragraphs: [
       "Hunt: Showdown fights reward controlled aim more than spray. An adjustable aimbot with smoothness, FOV, bone selection, and visibility checks helps you win peeks without looking like a rage toggle.",
-      "Zadeyo aimbot works with lever-actions, shotguns, and scoped rifles, and stacks with triggerbot, silent aim, and recoil control when you want a full combat suite. Instant delivery after checkout — monthly or lifetime.",
+      "Hunt Showdown aimbot works with lever-actions, shotguns, and scoped rifles, and stacks with triggerbot, silent aim, and recoil control when you want a full combat suite. Instant delivery after checkout — monthly or lifetime.",
     ],
     sections: [
       {
@@ -73,13 +73,13 @@ export const CHEAT_SEO_BODY: Record<string, CheatSeoBody> = {
         paragraphs: [
           "Most hunters searching Hunt Showdown aimbot still lose without ESP — you cannot aim at what you never saw. Run player ESP or wallhack first, radar second, aimbot last.",
           "Banish and extract fights are aimbot moments: you know a hunter is close and need clean headshots under pressure. Open-field rotations are radar + ESP moments before you toggle combat assists.",
-          "Compare the full suite on the cheats hub and provider comparison page before you buy. Zadeyo bundles aimbot with ESP, wallhack, and radar from $35/month.",
+          "Compare the full suite on the cheats hub and provider comparison page before you buy. Hunt Showdown cheats bundle aimbot with ESP, wallhack, and radar from $35/month.",
         ],
       },
       {
-        heading: "Buy Hunt Showdown aimbot from Zadeyo",
+        heading: "Buy Hunt Showdown aimbot online",
         paragraphs: [
-          "Open the buy page for $35/month or $150 lifetime, or checkout on Zadeyo for instant loader access. Watch the demo video to see targeting in real bayou gameplay before you commit.",
+          "Open the buy page for $35/month or $150 lifetime, or checkout online for instant loader access. Watch the demo video to see targeting in real bayou gameplay before you commit.",
           "After install, test smoothness in a short session before expensive loadouts. Read the anti-cheat safety guide — all Hunt Showdown cheats carry ban risk; update loaders after every Crytek patch.",
         ],
       },
@@ -89,7 +89,7 @@ export const CHEAT_SEO_BODY: Record<string, CheatSeoBody> = {
     heading: "Wallhack vision for compounds and crypts",
     paragraphs: [
       "Wallhack extends ESP through barns, crypts, and compound walls so you never push a doorway blind. Snap lines and skeleton layers make hunter poses readable even in torchlight or pitch black.",
-      "Zadeyo includes wallhack in the full Hunt Showdown cheat suite with Cloud DMA and stream-proof options from $35/month or $150 lifetime.",
+      "Hunt Showdown cheats include wallhack in the full Hunt Showdown cheat suite with Cloud DMA and stream-proof options from $35/month or $150 lifetime.",
     ],
     sections: [
       {
@@ -102,14 +102,14 @@ export const CHEAT_SEO_BODY: Record<string, CheatSeoBody> = {
       {
         heading: "Wallhack vs ESP — same loader, different layers",
         paragraphs: [
-          "Wallhack usually means through-wall silhouettes. ESP adds boxes, health, and distance. Zadeyo ships both in one Hunt Showdown cheat — toggle layers instead of buying separate tools.",
+          "Wallhack usually means through-wall silhouettes. ESP adds boxes, health, and distance. Hunt Showdown cheats ship both in one Hunt Showdown cheat — toggle layers instead of buying separate tools.",
           "Read the wallhack guide for compound-specific tips, then open the ESP page for box and skeleton settings. Pair with radar for teams still outside your building.",
         ],
       },
       {
         heading: "Price and checkout",
         paragraphs: [
-          "Wallhack is included in every plan — see the buy page for monthly and lifetime pricing. Instant Zadeyo delivery after checkout with Discord setup help and patch-ready updates.",
+          "Wallhack is included in every plan — see the buy page for monthly and lifetime pricing. Instant delivery after checkout with Discord setup help and patch-ready updates.",
         ],
       },
     ],
@@ -118,7 +118,7 @@ export const CHEAT_SEO_BODY: Record<string, CheatSeoBody> = {
     heading: "Radar for banish and extract control",
     paragraphs: [
       "Radar shows hunter positions across the map so you can time banish, rotate away from third parties, and pick safer extracts. It is the map-layer companion to wall ESP — local vision plus global awareness.",
-      "Zadeyo radar supports adjustable range and opacity, boss and extract markers, and Cloud DMA delivery with Windows security features left ON.",
+      "Hunt Showdown radar supports adjustable range and opacity, boss and extract markers, and Cloud DMA delivery with Windows security features left ON.",
     ],
     sections: [
       {
@@ -138,7 +138,7 @@ export const CHEAT_SEO_BODY: Record<string, CheatSeoBody> = {
       {
         heading: "Buy radar with the full cheat suite",
         paragraphs: [
-          "Radar is bundled with ESP, aimbot, and wallhack from $35/month on Zadeyo. Instant loader delivery — no separate radar-only SKU required.",
+          "Radar is bundled with ESP, aimbot, and wallhack from $35/month online. Instant loader delivery — no separate radar-only SKU required.",
         ],
       },
     ],
@@ -148,31 +148,64 @@ export const CHEAT_SEO_BODY: Record<string, CheatSeoBody> = {
     paragraphs: [
       "Triggerbot fires the moment your crosshair touches a hunter — ideal for shotgun pushes, tight windows, and high-TTK hold angles where a split-second delay loses the duel.",
       "Configure delay for a more natural feel, toggle per weapon class, and pair with aimbot smoothness so shots land clean without looking mechanical. Full suite pricing starts at $35/month.",
-      "Compare combat features on the cheats hub, then checkout for monthly or lifetime access with 24/7 Discord setup help.",
+    ],
+    sections: [
+      {
+        heading: "Triggerbot setup guide",
+        paragraphs: [
+          "Step 1: Enable player ESP first so you know when to hold an angle. Step 2: Set triggerbot delay to 40–90ms for shotguns, higher for lever-actions.",
+          "Step 3: Test in quick play on a Romero or Specter build before taking expensive hunters into trios.",
+          "Read the [triggerbot guide](/blog/hunt-showdown-triggerbot-guide/) for weapon-specific tips and pairing with [aimbot](/cheats/aimbot/).",
+        ],
+      },
     ],
   },
   "recoil-control": {
     heading: "Recoil control for every Hunt weapon",
     paragraphs: [
       "Recoil control keeps lever-actions, shotguns, and scoped rifles on target during chaotic compound fights. Per-weapon profiles and adjustable strength let you dial legit-looking spray or tighter tracking.",
-      "Stack recoil control with aimbot or silent aim for consistent bayou duels, and keep stream-proof mode on if you create content. Included in every Zadeyo Hunt Showdown plan.",
-      "Check system requirements and pricing on the buy page before purchase — Windows 10/11 and Steam supported.",
+      "Stack recoil control with aimbot or silent aim for consistent bayou duels, and keep stream-proof mode on if you create content. Included in every Hunt Showdown plan.",
+    ],
+    sections: [
+      {
+        heading: "Recoil control setup",
+        paragraphs: [
+          "Start at 50% strength on Sparks and Winfield, then raise only for indoor fights. Disable on single-shot weapons if you already use triggerbot.",
+          "Pair with [aimbot](/cheats/aimbot/) smoothness above 55% so vertical kick does not fight your assist.",
+        ],
+      },
     ],
   },
   "silent-aim": {
     heading: "Silent aim for stealth long-range holds",
     paragraphs: [
       "Silent aim redirects shots toward hunters while your visible crosshair stays still — useful for long-range holds and lobbies where obvious snap aim draws attention.",
-      "Configure FOV, target priority, and line-of-sight checks, then pair with recoil control for cleaner hits. Zadeyo delivers the full suite instantly after checkout.",
-      "Watch the gameplay demo and read the beginners guide if you are new to Hunt Showdown cheats before you buy.",
+      "Configure FOV, target priority, and line-of-sight checks, then pair with recoil control for cleaner hits. Hunt Showdown cheats deliver the full suite instantly after checkout.",
+    ],
+    sections: [
+      {
+        heading: "Silent aim setup steps",
+        paragraphs: [
+          "Keep FOV under 12° and require visibility checks. Silent aim without ESP is blind — enable [player ESP](/cheats/esp/) first.",
+          "Test on Sparks at 80m+ before enabling in boss fights where multiple teams watch kill cams.",
+        ],
+      },
     ],
   },
   "stream-proof": {
     heading: "Stream-proof overlays for creators",
     paragraphs: [
       "Stream-proof mode hides ESP, wallhack, and radar from OBS, Discord, and common capture tools so you can stream without showing overlays to viewers.",
-      "Toggle before you go live and keep the full combat suite available on your monitor. Included with monthly and lifetime Zadeyo plans — no separate stream-only SKU required.",
-      "See safety notes in our anti-cheat guide: all cheats carry ban risk, and stream-proof only hides overlays from capture — it is not a ban shield.",
+      "Toggle before you go live and keep the full combat suite available on your monitor. Included with monthly and lifetime plans — no separate stream-only SKU required.",
+    ],
+    sections: [
+      {
+        heading: "Stream-proof setup",
+        paragraphs: [
+          "Enable stream-proof in the loader, launch OBS, verify preview is clean, then start Hunt.",
+          "Follow the [stream-proof guide](/blog/hunt-showdown-stream-proof-guide/) — capture hiding is not the same as ban protection.",
+        ],
+      },
     ],
   },
   "cloud-dma": {
@@ -180,7 +213,15 @@ export const CHEAT_SEO_BODY: Record<string, CheatSeoBody> = {
     paragraphs: [
       "Cloud DMA runs the Hunt Showdown cheat suite while HVCI, Core Isolation, TPM, and Secure Boot stay enabled — so you do not have to weaken modern Windows protections.",
       "You still get ESP, aimbot, radar, and stream-proof options, plus a step-by-step setup guide and Discord help after purchase. Plans start at $35/month or $150 lifetime.",
-      "Follow the Cloud DMA explained article before first launch, then buy on the official Zadeyo product checkout for instant delivery.",
+    ],
+    sections: [
+      {
+        heading: "Cloud DMA setup guide",
+        paragraphs: [
+          "Step 1: Confirm HVCI, TPM, and Secure Boot in Windows Security. Step 2: Walk through the [Cloud DMA explained](/blog/cloud-dma-explained/) article.",
+          "Step 3: Launch loader only after external test tools pass — check [cheat status](/status/) after every Crytek patch.",
+        ],
+      },
     ],
   },
 };

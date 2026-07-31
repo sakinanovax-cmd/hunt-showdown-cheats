@@ -25,19 +25,19 @@ export default function SeoIntro() {
           <p className="prose-body mx-auto mb-6 max-w-3xl text-lg">{SITE_SEO_HEADLINE}</p>
           <p className="prose-body mx-auto mb-5 max-w-3xl">
             This page covers Hunt Showdown cheats end-to-end: feature breakdowns, compatibility with Windows
-            and Steam, setup guides, gameplay screenshots, price pages, and FAQs. {SITE_PRIMARY_KEYWORD} from Zadeyo
-            include player ESP wallhack, aimbot, radar, triggerbot, recoil control, stream-proof mode, and
-            Cloud DMA — from {PRICE_MONTHLY}/month or {PRICE_LIFETIME} lifetime with instant delivery.
+            and Steam, setup guides, gameplay screenshots, price pages, and FAQs. Plans include player ESP
+            wallhack, aimbot, radar, triggerbot, recoil control, stream-proof mode, and Cloud DMA — from{" "}
+            {PRICE_MONTHLY}/month or {PRICE_LIFETIME} lifetime with instant delivery.
           </p>
           <p className="prose-body mx-auto mb-5 max-w-3xl">
             Hunters looking for Hunt Showdown ESP, wallhack, or radar usually need clearer information in fog,
-            dark compounds, and boss-banish fights. Zadeyo documents each feature plainly so you can compare
+            dark compounds, and boss-banish fights. Our guides document each feature plainly so you can compare
             overlays, combat assists, and Cloud DMA options before checkout — without vague &quot;undetectable&quot;
             claims. Every plan includes patch-ready loader updates and Discord setup help after purchase.
           </p>
           <p className="prose-body mx-auto mb-8 max-w-3xl">
             Use this site to review cheat pages, pricing, FAQ answers, and setup guides, then buy on the
-            official Zadeyo product page when you are ready. {SITE_PRIMARY_KEYWORD} carry ban risk like any
+            official checkout page when you are ready. {SITE_PRIMARY_KEYWORD} carry ban risk like any
             third-party tool; keep loaders updated after Crytek patches and read the safety notes before you play.
           </p>
           <nav aria-label="Hunt Showdown cheats quick links" className="flex flex-col items-center justify-center gap-4 sm:flex-row sm:flex-wrap">
@@ -73,6 +73,12 @@ export default function SeoIntro() {
               Wallhack guide
             </Link>
             <Link
+              href="/status/"
+              className="text-sm font-medium text-[var(--color-text-secondary)] underline-offset-2 hover:text-[var(--color-purple-light)] hover:underline"
+            >
+              Live cheat status
+            </Link>
+            <Link
               href="/faq/"
               className="text-sm font-medium text-[var(--color-text-secondary)] underline-offset-2 hover:text-[var(--color-purple-light)] hover:underline"
             >
@@ -93,7 +99,7 @@ export default function SeoIntro() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              Zadeyo checkout
+              secure checkout
             </a>
           </p>
         </div>

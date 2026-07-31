@@ -10,6 +10,7 @@ import CheatCard from "@/components/cheats/CheatCard";
 import { getAllCheatSlugs, getCheatBySlug, getRelatedCheats } from "@/lib/cheats";
 import { getCheatSeoBody } from "@/lib/cheat-seo-body";
 import { buildPageMetadata } from "@/lib/metadata";
+import { getCheatPageKeywords } from "@/lib/seo-keywords";
 import { getCheatMetaDescription } from "@/lib/seo-descriptions";
 import { getCheatMetaTitle } from "@/lib/seo-titles";
 import { getBreadcrumbSchema, getWebPageSchema } from "@/lib/seo";
@@ -37,12 +38,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     path: `/cheats/${slug}/`,
     imageAlt: cheat.imageAlt,
     imagePath: cheat.image,
-    keywords: [
-      cheat.name,
-      `Hunt Showdown ${cheat.shortName} cheat`,
-      "buy Hunt Showdown cheats",
-      "Hunt Showdown cheats price",
-    ],
+    keywords: getCheatPageKeywords(slug, cheat.name),
   });
 }
 

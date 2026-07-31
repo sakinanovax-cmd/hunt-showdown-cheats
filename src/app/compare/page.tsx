@@ -30,7 +30,6 @@ export const metadata: Metadata = buildPageMetadata({
     "Hunt Showdown cheat comparison",
     "compare Hunt Showdown cheats",
     "Hunt Showdown cheats review",
-    "Zadeyo Hunt Showdown cheats",
   ],
 });
 
@@ -70,7 +69,7 @@ export default function ComparePage() {
             as="h1"
             eyebrow="Comparison"
             heading="Hunt Showdown Cheat Comparison — Features, Price & Providers"
-            description={`Side-by-side look at Hunt Showdown cheat features, Cloud DMA support, update speed, and price. Zadeyo starts at ${PRICE_MONTHLY}/month or ${PRICE_LIFETIME} lifetime with instant delivery.`}
+            description={`Side-by-side look at Hunt Showdown cheat features, Cloud DMA support, update speed, and price. Hunt Showdown cheats start at ${PRICE_MONTHLY}/month or ${PRICE_LIFETIME} lifetime with instant delivery.`}
             align="left"
           />
 
@@ -80,8 +79,8 @@ export default function ComparePage() {
               <article key={row.feature} className="compare-card">
                 <h2 className="mb-3 text-base font-semibold text-[var(--color-text)]">{row.feature}</h2>
                 <dl>
-                  <dt>Zadeyo</dt>
-                  <dd className="text-[var(--color-text)]">{row.zadeyo}</dd>
+                  <dt>Hunt Showdown Cheats</dt>
+                  <dd className="text-[var(--color-text)]">{row.huntCheats}</dd>
                   <dt>Multi-game shops</dt>
                   <dd>{row.multiGameShop}</dd>
                   <dt>Forum sellers</dt>
@@ -98,9 +97,7 @@ export default function ComparePage() {
                   <th scope="col" className="px-4 py-4 font-semibold text-[var(--color-text)]">
                     Feature
                   </th>
-                  <th scope="col" className="px-4 py-4 font-semibold text-[var(--color-purple-light)]">
-                    Zadeyo
-                  </th>
+                  <th scope="col" className="px-4 py-4 font-semibold text-[var(--color-purple-light)]">Hunt Showdown Cheats</th>
                   <th scope="col" className="px-4 py-4 font-semibold text-[var(--color-text-secondary)]">
                     Multi-game shops
                   </th>
@@ -118,7 +115,7 @@ export default function ComparePage() {
                     <td className="px-4 py-3 text-[var(--color-text)]">
                       <span className="inline-flex items-center gap-2">
                         <Check className="h-4 w-4 shrink-0 text-[var(--color-purple-light)]" aria-hidden />
-                        {row.zadeyo}
+                        {row.huntCheats}
                       </span>
                     </td>
                     <td className="px-4 py-3 text-[var(--color-text-secondary)]">{row.multiGameShop}</td>
@@ -131,7 +128,7 @@ export default function ComparePage() {
 
           <section className="mb-12 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-6 md:p-8">
             <h2 className="display-heading mb-4 text-2xl text-[var(--color-text)]">
-              Why Zadeyo ranks top in 2026
+              Why Hunt Showdown cheats rank top in 2026
             </h2>
             <ul className="space-y-3">
               {COMPARISON_VERDICT.map((point) => (
@@ -151,6 +148,12 @@ export default function ComparePage() {
               >
                 See full price & features
               </a>
+              <Link
+                href="/status/"
+                className="inline-flex items-center justify-center px-2 py-3 text-sm text-[var(--color-text-secondary)] underline-offset-2 hover:text-[var(--color-purple-light)] hover:underline"
+              >
+                Live cheat status
+              </Link>
               <Link
                 href="/blog/best-hunt-showdown-cheat-comparison-2026/"
                 className="inline-flex items-center justify-center px-2 py-3 text-sm text-[var(--color-text-secondary)] underline-offset-2 hover:text-[var(--color-purple-light)] hover:underline"

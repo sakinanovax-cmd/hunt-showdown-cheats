@@ -8,10 +8,12 @@ import Footer from "@/components/layout/Footer";
 import PageMain from "@/components/layout/PageMain";
 import Breadcrumbs from "@/components/seo/Breadcrumbs";
 import ArticleCTA from "@/components/blog/ArticleCTA";
+import RelatedCheatPages from "@/components/blog/RelatedCheatPages";
 import RelatedArticles from "@/components/blog/RelatedArticles";
 import JsonLd from "@/components/seo/JsonLd";
 import { getAllSlugs, getArticleBySlug } from "@/lib/blog";
 import { buildPageMetadata } from "@/lib/metadata";
+import { getBlogPageKeywords } from "@/lib/seo-keywords";
 import { getBlogMetaDescription } from "@/lib/seo-descriptions";
 import { getBlogMetaTitle } from "@/lib/seo-titles";
 import { getArticleSchema, getBreadcrumbSchema } from "@/lib/seo";
@@ -37,6 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     imagePath: article.image,
     type: "article",
     publishedTime: article.publishedAt,
+    keywords: getBlogPageKeywords(slug),
   });
 }
 
@@ -116,6 +119,7 @@ export default async function BlogArticlePage({ params }: Props) {
           </div>
 
           <ArticleCTA />
+          <RelatedCheatPages slugs={article.relatedCheatSlugs} />
           <RelatedArticles slugs={article.relatedSlugs} currentSlug={article.slug} />
         </article>
       </PageMain>

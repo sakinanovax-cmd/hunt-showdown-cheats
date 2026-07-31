@@ -5,8 +5,9 @@ import {
   BLOG_META_DESCRIPTIONS,
   META_DESCRIPTIONS,
 } from "./seo-descriptions";
+import { TARGET_KEYWORDS } from "./seo-keywords";
 import {
-  SITE_NAME,
+  SITE_BRAND,
   SITE_PRIMARY_KEYWORD,
   SITE_PRODUCT_NAME,
   SITE_SEO_DESCRIPTION,
@@ -16,22 +17,14 @@ import {
 } from "./site";
 
 export const SEO_KEYWORDS = [
-  "Hunt Showdown cheats",
-  "Hunt Showdown cheat",
+  ...TARGET_KEYWORDS,
   "best Hunt Showdown cheats",
-  "buy Hunt Showdown cheats",
-  "Hunt Showdown cheats 2026",
   "Hunt Showdown ESP cheat",
   "Hunt Showdown aimbot cheat",
   "Hunt Showdown wallhack cheat",
-  "Hunt Showdown radar cheat",
-  "Hunt Showdown hacks",
-  "Hunt Showdown cheat download",
   "Hunt Showdown triggerbot",
   "Cloud DMA Hunt Showdown cheat",
   "stream proof Hunt Showdown cheat",
-  "Zadeyo Hunt Showdown cheats",
-  "Hunt: Showdown cheats",
 ];
 
 const OFFER_VALID_UNTIL = "2027-12-31";
@@ -49,23 +42,26 @@ export function toJsonLdGraph(schemas: Record<string, unknown>[]): Record<string
   };
 }
 
+const ORGANIZATION_LOGO = "/images/zadeyo/google-logo.png";
+const ORGANIZATION_LOGO_SIZE = 512;
+
 export function getOrganizationSchema() {
-  const logoUrl = getAbsoluteAssetUrl("/images/zadeyo/google-logo.png");
+  const logoUrl = getAbsoluteAssetUrl(ORGANIZATION_LOGO);
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: `${SITE_PRIMARY_KEYWORD} — ${SITE_NAME}`,
+    name: SITE_BRAND,
     url: getCanonicalUrl("/"),
     logo: {
       "@type": "ImageObject",
       url: logoUrl,
       contentUrl: logoUrl,
-      width: 512,
-      height: 512,
-      caption: `${SITE_NAME} logo`,
+      width: ORGANIZATION_LOGO_SIZE,
+      height: ORGANIZATION_LOGO_SIZE,
+      caption: `${SITE_BRAND} logo`,
     },
     image: logoUrl,
-    sameAs: [ZADEYO_CHECKOUT_URL, "https://zadeyo.com/"],
+    sameAs: [ZADEYO_CHECKOUT_URL],
   };
 }
 
@@ -73,12 +69,12 @@ export function getWebSiteSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: `${SITE_PRIMARY_KEYWORD} — ${SITE_NAME}`,
-    alternateName: ["Zadeyo Hunt Showdown Cheats", "Hunt Showdown Cheats Zadeyo"],
+    name: SITE_BRAND,
+    alternateName: [SITE_PRIMARY_KEYWORD, "Hunt Showdown cheat guides"],
     url: getCanonicalUrl("/"),
     description: SITE_SEO_DESCRIPTION,
     inLanguage: "en",
-    publisher: { "@type": "Organization", name: SITE_NAME, url: getCanonicalUrl("/") },
+    publisher: { "@type": "Organization", name: SITE_BRAND, url: getCanonicalUrl("/") },
   };
 }
 
@@ -157,7 +153,7 @@ function buildOffer(plan: (typeof PRICING_PLANS)[number], offerName?: string) {
     priceValidUntil: OFFER_VALID_UNTIL,
     seller: {
       "@type": "Organization",
-      name: SITE_NAME,
+      name: SITE_BRAND,
       url: getCanonicalUrl("/"),
     },
     shippingDetails: buildShippingDetails(),
@@ -184,9 +180,9 @@ export function getProductSchema() {
     description:
       "Hunt Showdown cheats with ESP for player and loot visibility, aimbot, triggerbot, radar, recoil control, silent aim, stream-proof mode, and Cloud DMA option.",
     category: "Software > Game Utilities",
-    sku: "zadeyo-hunt-showdown-cheats",
-    mpn: "ZADEYO-HUNT-CHEATS",
-    brand: { "@type": "Brand", name: SITE_NAME },
+    sku: "hunt-showdown-cheats",
+    mpn: "HUNT-SHOWDOWN-CHEATS",
+    brand: { "@type": "Brand", name: SITE_BRAND },
     url: getCanonicalUrl("/buy/"),
     image: PRODUCT_IMAGES,
     offers: {
@@ -249,17 +245,17 @@ export function getArticleSchema(article: {
     inLanguage: "en",
     author: {
       "@type": "Organization",
-      name: SITE_NAME,
+      name: SITE_BRAND,
       url: getCanonicalUrl("/"),
     },
     publisher: {
       "@type": "Organization",
-      name: SITE_NAME,
+      name: SITE_BRAND,
       logo: {
         "@type": "ImageObject",
-        url: getAbsoluteAssetUrl("/images/zadeyo/google-logo.png"),
-        width: 512,
-        height: 512,
+        url: getAbsoluteAssetUrl(ORGANIZATION_LOGO),
+        width: ORGANIZATION_LOGO_SIZE,
+        height: ORGANIZATION_LOGO_SIZE,
       },
     },
     mainEntityOfPage: { "@type": "WebPage", "@id": getCanonicalUrl(`/blog/${article.slug}/`) },
@@ -314,10 +310,10 @@ export function getVideoSchema() {
     isFamilyFriendly: true,
     publisher: {
       "@type": "Organization",
-      name: SITE_NAME,
+      name: SITE_BRAND,
       logo: {
         "@type": "ImageObject",
-        url: getAbsoluteAssetUrl("/images/zadeyo/google-logo.png"),
+        url: getAbsoluteAssetUrl(ORGANIZATION_LOGO),
       },
     },
   };

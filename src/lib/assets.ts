@@ -1,4 +1,4 @@
-/** Media sourced from https://zadeyo.com/products/hunt-showdown-cheats */
+/** Hunt Showdown product media (checkout provider assets). */
 export const ZADEYO_ASSETS = {
   /** Compact WebP mark for UI (navbar/footer). Keep PNG for favicon/schema. */
   logo: "/images/zadeyo/logo-mark.webp",
@@ -83,7 +83,7 @@ export const GAMEPLAY_GALLERY = [
     src: HUNT_IMAGES.espCyan,
     alt: "Hunt Showdown cheat demo — cyan player outline during banish",
     label: "Cheat Demo",
-    caption: "Zadeyo overlay during boss banish phase",
+    caption: "Hunt Showdown cheat overlay during boss banish phase",
     local: true,
   },
 ] as const;

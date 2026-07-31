@@ -55,7 +55,7 @@ export default function BlogPage() {
             as="h1"
             eyebrow="Guides"
             heading="Hunt Showdown Cheats Guides"
-            description="Everything about Hunt Showdown cheats — ESP, aimbot, wallhack, radar, Cloud DMA, anti-cheat, and setup for Zadeyo."
+            description="Everything about Hunt Showdown cheats — ESP, aimbot, wallhack, radar, Cloud DMA, anti-cheat, and setup guides."
             align="left"
           />
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">

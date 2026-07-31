@@ -8,7 +8,7 @@ export default function HowItWorks() {
         <SectionHeading
           eyebrow="How It Works"
           heading="How to Install Hunt Showdown Cheats"
-          description="Buy Hunt Showdown cheats on Zadeyo, set up Cloud DMA, load the cheat, and enable ESP, aimbot & wallhack in-game."
+          description="Buy Hunt Showdown cheats online, set up Cloud DMA, load the cheat, and enable ESP, aimbot & wallhack in-game."
         />
 
         <div className="grid gap-8 md:grid-cols-3">

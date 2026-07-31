@@ -75,10 +75,10 @@ export const COMPATIBILITY = [
 
 export const WHY_CHOOSE: InfoSection = {
   eyebrow: "Why choose us",
-  heading: "Why choose Zadeyo Hunt Showdown cheats?",
+  heading: "Why choose Hunt Showdown cheats?",
   paragraphs: [
     "Take your Hunt: Showdown gameplay to the next level with ESP to see enemy locations through walls, aimbot for precise targeting, and radar for a complete map overview.",
-    "Zadeyo focuses on clear feature documentation, patch-aligned loader updates, and straightforward Discord support — so you know exactly what you are buying before checkout.",
+    "Hunt Showdown cheats focus on clear feature documentation, patch-aligned loader updates, and straightforward Discord support — so you know exactly what you are buying before checkout.",
   ],
 };
 
@@ -86,7 +86,7 @@ export const PRODUCT_INFO: InfoSection = {
   eyebrow: "Product details",
   heading: "Hunt: Showdown cheat — ESP, aimbot & wallhack",
   paragraphs: [
-    "Zadeyo Hunt: Showdown cheat software includes ESP for player and loot visibility, aimbot with adjustable settings, triggerbot, customizable recoil control, and radar with real-time enemy tracking.",
+    "Hunt Showdown cheat software includes ESP for player and loot visibility, aimbot with adjustable settings, triggerbot, customizable recoil control, and radar with real-time enemy tracking.",
     "Movement speed adjustments, silent aim, and stream-proof mode keep overlays invisible to OBS and common capture tools. Cloud DMA support works with HVCI, Core Isolation, TPM, and Secure Boot enabled.",
     "Pricing starts at $35/month for 31 days of access, or $150 lifetime for unlimited access, with instant loader delivery after checkout.",
   ],
@@ -98,7 +98,7 @@ export const THE_GAME: InfoSection = {
   paragraphs: [
     "Hunt: Showdown is a competitive first-person bounty hunting game set in the Louisiana bayou. Teams of hunters track monsters and rival players across dark, atmospheric maps filled with PvP danger and PvE threats.",
     "Success demands map knowledge, sound discipline, and clean gunplay. Extract with bounties alive and you keep your gear. Die to a rival team or the boss and you lose everything you brought in.",
-    "Zadeyo's Hunt Showdown cheats give you the information edge — ESP wallhack through structures, radar cheat awareness, and precision aimbot tools — so you dominate every hunt.",
+    "Our Hunt Showdown cheats give you the information edge — ESP wallhack through structures, radar cheat awareness, and precision aimbot tools — so you dominate every hunt.",
   ],
 };
 
@@ -129,8 +129,8 @@ export const TRUST_SECTIONS: InfoSection[] = [
     heading: "Quality builds & patch-aligned updates",
     paragraphs: [
       "Quality and security is our foundation. Private-quality software built to a higher standard than throwaway loaders, with continuous updates for Hunt: Showdown's live client.",
-      "Thousands of players trust Zadeyo delivery and support. Questions or problems? 24/7 help is always available.",
-      "Choose Zadeyo today. Instant delivery after checkout. Start hunting.",
+      "Thousands of players trust our delivery delivery and support. Questions or problems? 24/7 help is always available.",
+      "Get Hunt Showdown cheats today. Instant delivery after checkout. Start hunting.",
     ],
   },
   {
@@ -146,14 +146,14 @@ export const TRUST_SECTIONS: InfoSection[] = [
     heading: "24/7 cheat support when you need it",
     paragraphs: [
       "We supply not only a strong Hunt: Showdown cheat — we supply the support to match. Help is available whenever something goes wrong.",
-      "Your Zadeyo order page keeps loader downloads and setup instructions in one place. Average response time under 15 minutes.",
+      "Your your order page keeps loader downloads and setup instructions in one place. Average response time under 15 minutes.",
     ],
   },
   {
     eyebrow: "Experience",
     heading: "Easy cheat loader interface",
     paragraphs: [
-      "Clear toggles, readable ESP options, and settings that do not require a tutorial. Choose your plan, buy on Zadeyo, download the loader, and follow the short guide.",
+      "Clear toggles, readable ESP options, and settings that do not require a tutorial. Choose your plan, buy Hunt Showdown cheats, download the loader, and follow the short guide.",
       "The in-game menu follows the same idea: dial in aim smoothness, ESP colors, and radar range without fighting a complicated overlay.",
     ],
   },
@@ -180,7 +180,7 @@ export const HOW_IT_WORKS: HowItWorksStep[] = [
   {
     number: "01",
     title: "Purchase & Download",
-    description: "Complete checkout on Zadeyo. Right after payment, your order page shows the loader download and setup guide.",
+    description: "Complete checkout online. Right after payment, your order page shows the loader download and setup guide.",
   },
   {
     number: "02",
@@ -198,41 +198,41 @@ export const FAQ_ITEMS: FAQItem[] = [
   {
     question: "What are Hunt Showdown cheats?",
     answer:
-      "Hunt Showdown cheats are external tools that add ESP (see players through walls), aimbot, wallhack, radar, triggerbot, and recoil control to Hunt: Showdown. Zadeyo Hunt Showdown cheats include stream-proof mode and Cloud DMA for modern Windows security.",
+      "Hunt Showdown cheats are external tools that add ESP (see players through walls), aimbot, wallhack, radar, triggerbot, and recoil control to Hunt: Showdown. Hunt Showdown cheats include stream-proof mode and Cloud DMA for modern Windows security.",
   },
   {
     question: "Where can I buy Hunt Showdown cheats?",
     answer:
-      "Buy Hunt Showdown cheats directly from Zadeyo — $35/month or $150 lifetime. Instant cheat delivery after checkout with ESP, aimbot, wallhack, radar, and full loader access.",
+      "Buy Hunt Showdown cheats directly online — $35/month or $150 lifetime. Instant cheat delivery after checkout with ESP, aimbot, wallhack, radar, and full loader access.",
   },
   {
     question: "Are Hunt Showdown cheats safe to use?",
     answer:
-      "All Hunt Showdown cheats carry ban risk. Zadeyo focuses on quality builds, regular Crytek patch updates, Cloud DMA compatibility, and stream-proof mode. No provider can guarantee zero bans — keep your loader updated and read our anti-cheat guide.",
+      "All Hunt Showdown cheats carry ban risk. Hunt Showdown cheats focus on quality builds, regular Crytek patch updates, Cloud DMA compatibility, and stream-proof mode. No provider can guarantee zero bans — keep your loader updated and read our anti-cheat guide.",
   },
   {
     question: "How much do Hunt Showdown cheats cost?",
-    answer: "Hunt Showdown cheats from Zadeyo cost $35/month or $150 lifetime. Both plans include the full ESP, aimbot, wallhack, radar, and Cloud DMA cheat suite with 24/7 support.",
+    answer: "Hunt Showdown cheats online cost $35/month or $150 lifetime. Both plans include the full ESP, aimbot, wallhack, radar, and Cloud DMA cheat suite with 24/7 support.",
   },
   {
     question: "What features do Hunt Showdown cheats include?",
     answer:
-      "Zadeyo Hunt Showdown cheats include player ESP, loot ESP, aimbot, wallhack, triggerbot, radar, recoil control, silent aim, movement adjustments, stream-proof mode, and Cloud DMA option.",
+      "Hunt Showdown cheats include player ESP, loot ESP, aimbot, wallhack, triggerbot, radar, recoil control, silent aim, movement adjustments, stream-proof mode, and Cloud DMA option.",
   },
   {
     question: "Can I use Hunt Showdown cheats while streaming?",
     answer:
-      "Yes. Zadeyo Hunt Showdown cheats include stream-proof mode so ESP and wallhack overlays stay invisible to OBS, Discord, and common capture software.",
+      "Yes. Hunt Showdown cheats include stream-proof mode so ESP and wallhack overlays stay invisible to OBS, Discord, and common capture software.",
   },
   {
     question: "Do Hunt Showdown cheats work with Cloud DMA?",
     answer:
-      "Yes. Zadeyo Hunt Showdown cheats support Cloud DMA with HVCI ON, Core Isolation ON, TPM ON, and Secure Boot ON. See our Cloud DMA setup guide for step-by-step instructions.",
+      "Yes. Hunt Showdown cheats support Cloud DMA with HVCI ON, Core Isolation ON, TPM ON, and Secure Boot ON. See our Cloud DMA setup guide for step-by-step instructions.",
   },
   {
     question: "How often are Hunt Showdown cheat updates released?",
     answer:
-      "Hunt Showdown cheat updates ship as quickly as possible after every Crytek patch. Active Zadeyo subscribers receive loader refreshes through their order page.",
+      "Hunt Showdown cheat updates ship as quickly as possible after every Crytek patch. Active active subscribers receive loader refreshes through their order page.",
   },
 ];
 
@@ -297,11 +297,11 @@ export const BUY_FEATURE_BENEFITS = [
 ];
 
 export const BUY_DELIVERY_TERMS = [
-  "Instant loader access on your Zadeyo order page after checkout",
-  "Monthly plan: 31 days of access, renews unless cancelled on Zadeyo",
+  "Instant loader access on your your order page after checkout",
+  "Monthly plan: 31 days of access, renews unless cancelled online",
   "Lifetime plan: one-time payment, includes future Hunt Showdown cheat updates",
   "Cloud DMA setup guide included where required for full functionality",
-  "24/7 support via Zadeyo — refund and billing terms on the official product page",
+  "24/7 support online — refund and billing terms on the official product page",
 ];
 
 export const BUY_FEATURES = [
@@ -344,6 +344,7 @@ export const FOOTER_LINKS = {
     { label: "Silent aim", href: "/cheats/silent-aim/" },
     { label: "Stream-proof", href: "/cheats/stream-proof/" },
     { label: "Cloud DMA", href: "/cheats/cloud-dma/" },
+    { label: "Cheat status", href: "/status/" },
     { label: "Compare", href: "/compare/" },
     { label: "Help answers", href: "/faq/" },
     { label: "Demo video", href: "/video/" },
@@ -359,6 +360,6 @@ export const FOOTER_LINKS = {
   trust: [
     { label: "Product details", href: "/#product-info" },
     { label: "DMA setup", href: "/blog/cloud-dma-explained/" },
-    { label: "Zadeyo store", href: ZADEYO_CHECKOUT_URL },
+    { label: "Buy cheats", href: ZADEYO_CHECKOUT_URL },
   ],
 };

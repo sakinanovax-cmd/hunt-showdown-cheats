@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   ...defaultMetadata,
   icons: {
     icon: [
-      { url: "/favicon.png", type: "image/png" },
       { url: "/images/zadeyo/google-logo.png", type: "image/png", sizes: "512x512" },
+      { url: "/favicon.png", type: "image/png" },
     ],
     apple: "/images/zadeyo/google-logo.png",
-    shortcut: "/favicon.png",
+    shortcut: "/images/zadeyo/google-logo.png",
   },
   manifest: "/manifest.webmanifest",
 };
@@ -51,7 +51,7 @@ export default function RootLayout({
           <div className="container-dnd py-4 text-center text-sm text-[var(--color-text-secondary)]">
             JavaScript is disabled. You can still{" "}
             <a href={ZADEYO_CHECKOUT_URL} className="text-[var(--color-purple-light)] underline">
-              buy Hunt Showdown cheats on Zadeyo
+              buy Hunt Showdown cheats online
             </a>
             .
           </div>

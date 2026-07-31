@@ -6,6 +6,7 @@ const HUB_PAGES = [
   { href: "/buy/", label: "Buy plans", key: "buy" as const },
   { href: "/compare/", label: "Compare tools", key: "compare" as const },
   { href: "/faq/", label: "FAQ hub", key: "faq" as const },
+  { href: "/status/", label: "Cheat status", key: "status" as const },
   { href: "/video/", label: "Video demo", key: "video" as const },
 ];
 

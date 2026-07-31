@@ -21,6 +21,7 @@ import { ZADEYO_ASSETS } from "@/lib/assets";
 import JsonLd from "@/components/seo/JsonLd";
 import { buildPageMetadata } from "@/lib/metadata";
 import { getBreadcrumbSchema, getProductSchema, getWebPageSchema } from "@/lib/seo";
+import { BUY_PAGE_KEYWORDS } from "@/lib/seo-keywords";
 import { META_DESCRIPTIONS } from "@/lib/seo-descriptions";
 import { META_TITLES } from "@/lib/seo-titles";
 import { DISCLAIMER, getCanonicalUrl, LAST_CONTENT_REVIEW } from "@/lib/site";
@@ -32,12 +33,7 @@ export const metadata: Metadata = buildPageMetadata({
   path: "/buy/",
   imageAlt: "Hunt Showdown cheats product preview — ESP, aimbot and wallhack menu",
   imagePath: ZADEYO_ASSETS.screenshotBanner,
-  keywords: [
-    "buy Hunt Showdown cheats",
-    "Hunt Showdown cheat price",
-    "Hunt Showdown cheats $35",
-    "Zadeyo Hunt Showdown cheats",
-  ],
+  keywords: [...BUY_PAGE_KEYWORDS],
 });
 
 export default function BuyPage() {
@@ -78,7 +74,7 @@ export default function BuyPage() {
             as="h1"
             eyebrow="Transactional"
             heading="Hunt Showdown Cheats — Price, Features & Buy"
-            description="Hunt Showdown cheats for Steam on Windows 10/11 — ESP, aimbot, wallhack, radar, and Cloud DMA. Choose monthly or lifetime, checkout on Zadeyo, instant loader delivery."
+            description="Hunt Showdown cheats for Steam on Windows 10/11 — ESP, aimbot, wallhack, radar, and Cloud DMA. Choose monthly or lifetime, checkout online, instant loader delivery."
             align="left"
           />
 
@@ -113,7 +109,7 @@ export default function BuyPage() {
                   <span className="display-heading text-5xl text-[var(--color-text)]">{plan.price}</span>
                 </div>
                 <PurchaseButton className="w-full justify-center">
-                Buy on Zadeyo — {plan.price}
+                Buy Hunt Showdown Cheats — {plan.price}
               </PurchaseButton>
                 <ul className="space-y-3">
                   {plan.features.map((f) => (

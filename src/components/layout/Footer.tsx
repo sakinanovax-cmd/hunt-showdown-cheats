@@ -20,7 +20,7 @@ export default function Footer() {
             <Logo className="mb-4" />
             <p className="mb-4 text-sm leading-relaxed text-[var(--color-text-secondary)]">
               Hunt Showdown cheats — ESP, aimbot &amp; wallhack with stream-proof mode, Cloud DMA,
-              and instant Zadeyo delivery after checkout.
+              and instant delivery after checkout.
             </p>
             <p className="text-xs text-[var(--color-text-muted)]">
               Last meaningful content review: {LAST_CONTENT_REVIEW}

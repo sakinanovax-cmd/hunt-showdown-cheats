@@ -4,8 +4,7 @@ import { trimMetaDescription } from "./seo-descriptions";
 import { DEFAULT_LAYOUT_TITLE } from "./seo-titles";
 import { SEO_KEYWORDS } from "./seo";
 import {
-  SITE_NAME,
-  SITE_PRIMARY_KEYWORD,
+  SITE_BRAND,
   SITE_SEO_DESCRIPTION,
   SITE_URL,
   getAbsoluteAssetUrl,
@@ -43,11 +42,11 @@ export const defaultMetadata: Metadata = {
   },
   description: SITE_SEO_DESCRIPTION,
   keywords: SEO_KEYWORDS,
-  authors: [{ name: SITE_NAME, url: getCanonicalUrl("/") }],
-  creator: SITE_NAME,
-  publisher: SITE_NAME,
+  authors: [{ name: SITE_BRAND, url: getCanonicalUrl("/") }],
+  creator: SITE_BRAND,
+  publisher: SITE_BRAND,
   category: "gaming",
-  applicationName: SITE_NAME,
+  applicationName: SITE_BRAND,
   formatDetection: {
     telephone: false,
     email: false,
@@ -57,7 +56,7 @@ export const defaultMetadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: getCanonicalUrl("/"),
-    siteName: `${SITE_NAME} — ${SITE_PRIMARY_KEYWORD}`,
+    siteName: SITE_BRAND,
     title: DEFAULT_LAYOUT_TITLE,
     description: SITE_SEO_DESCRIPTION,
     images: sharedOgImage(DEFAULT_OG_IMAGE, "Hunt Showdown cheats — ESP wallhack gameplay screenshot"),
@@ -136,12 +135,12 @@ export function buildPageMetadata({
       type,
       locale: "en_US",
       url: canonical,
-      siteName: `${SITE_NAME} — ${SITE_PRIMARY_KEYWORD}`,
+      siteName: SITE_BRAND,
       title,
       description: metaDescription,
       images,
       ...(type === "article" && publishedTime
-        ? { publishedTime, modifiedTime: publishedTime, authors: [SITE_NAME] }
+        ? { publishedTime, modifiedTime: publishedTime, authors: [SITE_BRAND] }
         : {}),
     },
     twitter: {

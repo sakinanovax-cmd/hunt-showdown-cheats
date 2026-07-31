@@ -82,7 +82,7 @@ export default function Navbar() {
       }`}
     >
       <div className="container-dnd grid h-full grid-cols-[1fr_auto] items-center gap-3 lg:grid-cols-[1fr_auto_1fr]">
-        <Link href="/" aria-label="Zadeyo Hunt Showdown cheats home" className="min-w-0 justify-self-start">
+        <Link href="/" aria-label="Hunt Showdown Cheats home" className="min-w-0 justify-self-start">
           <Logo />
         </Link>
 

@@ -6,7 +6,7 @@ export default function ArticleCTA() {
     <aside className="card-surface pricing-glow mt-12 p-8 text-center md:p-10">
       <p className="section-label mb-3">Ready to dominate?</p>
       <h2 className="display-heading mb-4 text-2xl text-[var(--color-purple)] md:text-3xl">
-        Get Hunt Showdown Cheats from Zadeyo
+        Get Hunt Showdown Cheats online
       </h2>
       <p className="prose-body mx-auto mb-6 max-w-xl">
         Instant cheat delivery — ESP, aimbot, wallhack, radar, and stream-proof mode. Plans from{" "}

@@ -75,6 +75,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.9,
     },
+    {
+      url: getCanonicalUrl("/status/"),
+      lastModified: LAST_REVIEW_DATE,
+      changeFrequency: "weekly",
+      priority: 0.87,
+    },
     ...cheatUrls,
     ...blogUrls,
   ];

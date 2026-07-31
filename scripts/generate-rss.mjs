@@ -62,6 +62,26 @@ if (siteUrl.includes("localhost")) {
 
 const blogModulePath = join(root, "src/lib/blog-articles.ts");
 const blogSource = readFileSync(blogModulePath, "utf8");
+const seoDescPath = join(root, "src/lib/seo-descriptions.ts");
+const seoSource = readFileSync(seoDescPath, "utf8");
+
+function parseMetaRecord(source, exportName) {
+  const re = new RegExp(`export const ${exportName}[^=]*=\\s*\\{([\\s\\S]*?)\\n\\};`);
+  const match = source.match(re);
+  if (!match) return {};
+  const block = match[1];
+  const entries = new Map();
+  for (const [, slug, desc] of block.matchAll(/"([^"]+)":\s*\n\s*"([^"]+)"/g)) {
+    entries.set(slug, desc);
+  }
+  for (const [, slug, desc] of block.matchAll(/^\s*([\w-]+):\s*\n\s*"([^"]+)"/gm)) {
+    entries.set(slug, desc);
+  }
+  return Object.fromEntries(entries);
+}
+
+const blogMetaDescriptions = parseMetaRecord(seoSource, "BLOG_META_DESCRIPTIONS");
+const cheatMetaDescriptions = parseMetaRecord(seoSource, "CHEAT_META_DESCRIPTIONS");
 
 const articleBlocks = [
   ...blogSource.matchAll(
@@ -80,13 +100,14 @@ const cheatBlocks = [
 const blogItems = articleBlocks
   .map(([, slug, title, excerpt, publishedAt]) => {
     const link = `${siteUrl}/blog/${slug}/`;
+    const description = blogMetaDescriptions[slug] ?? excerpt;
     return `
     <item>
       <title><![CDATA[${title}]]></title>
       <link>${link}</link>
       <guid isPermaLink="true">${link}</guid>
       <pubDate>${new Date(publishedAt).toUTCString()}</pubDate>
-      <description><![CDATA[${excerpt}]]></description>
+      <description><![CDATA[${description}]]></description>
     </item>`;
   })
   .join("");
@@ -94,13 +115,14 @@ const blogItems = articleBlocks
 const cheatItems = cheatBlocks
   .map(([, slug, name, tagline]) => {
     const link = `${siteUrl}/cheats/${slug}/`;
+    const description = cheatMetaDescriptions[slug] ?? tagline;
     return `
     <item>
       <title><![CDATA[${name} — Buy & Price]]></title>
       <link>${link}</link>
       <guid isPermaLink="true">${link}</guid>
       <pubDate>${new Date().toUTCString()}</pubDate>
-      <description><![CDATA[${tagline}]]></description>
+      <description><![CDATA[${description}]]></description>
     </item>`;
   })
   .join("");
@@ -108,9 +130,9 @@ const cheatItems = cheatBlocks
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Zadeyo — Hunt Showdown Cheats</title>
+    <title>Hunt Showdown Cheats</title>
     <link>${siteUrl}/</link>
-    <description>Buy Hunt Showdown cheats — ESP, aimbot, wallhack & radar. $35/mo or $150 lifetime. Guides, cheat pages & Zadeyo buy links.</description>
+    <description>Buy Hunt Showdown cheats — ESP, aimbot, wallhack & radar. $35/mo or $150 lifetime. Guides, cheat pages & buy links.</description>
     <language>en-us</language>
     <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
     <atom:link href="${siteUrl}/rss.xml" rel="self" type="application/rss+xml"/>

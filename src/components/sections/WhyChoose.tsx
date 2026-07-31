@@ -12,7 +12,7 @@ export default function WhyChoose() {
             <p className="section-label mb-4">Why choose us</p>
             <p className="ref-section-title mb-6">
               Why choose{" "}
-              <span className="text-[var(--color-purple-light)]">Zadeyo?</span>
+              <span className="text-[var(--color-purple-light)]">Hunt Showdown Cheats?</span>
             </p>
             <p className="mb-8 text-[var(--color-text-secondary)] leading-relaxed">
               {WHY_CHOOSE.paragraphs[0]}

@@ -68,7 +68,7 @@ export default function CheatBuyPanel({ cheat, variant = "inline" }: CheatBuyPan
         <p className="font-mono-label mb-2 text-[var(--color-purple-light)]">Ready to buy?</p>
         <p className="display-heading text-2xl text-[var(--color-text)]">{cheat.buyHook}</p>
         <p className="mt-2 text-sm text-[var(--color-text-secondary)]">
-          {cheat.shortName} is included in the full Hunt Showdown cheat suite — instant Zadeyo delivery.
+          {cheat.shortName} is included in the full Hunt Showdown cheat suite — instant delivery.
         </p>
       </div>
 

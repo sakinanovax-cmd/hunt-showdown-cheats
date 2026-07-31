@@ -82,7 +82,7 @@ export default function VideoPage() {
             as="h1"
             eyebrow="Gameplay"
             heading="Hunt Showdown Cheats — Video Demo"
-            description="Full gameplay footage — player ESP, wallhack overlays, aimbot, and bayou PvP. Watch the Zadeyo cheat suite in action, then buy from $35/mo or $150 lifetime."
+            description="Full gameplay footage — player ESP, wallhack overlays, aimbot, and bayou PvP. Watch the Hunt Showdown cheat suite in action, then buy from $35/mo or $150 lifetime."
             align="left"
           />
 
@@ -162,7 +162,7 @@ export default function VideoPage() {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  Zadeyo checkout
+                  secure checkout
                 </a>{" "}
                 for instant delivery.
               </li>

@@ -11,6 +11,7 @@ import Link from "next/link";
 import { PurchaseButton } from "@/components/ui/Button";
 import { CHEAT_PRODUCTS, CHEAT_PRICING } from "@/lib/cheats";
 import { buildPageMetadata } from "@/lib/metadata";
+import { CHEATS_HUB_KEYWORDS } from "@/lib/seo-keywords";
 import { META_DESCRIPTIONS } from "@/lib/seo-descriptions";
 import { META_TITLES } from "@/lib/seo-titles";
 import { getBreadcrumbSchema, getCheatsItemListSchema, getWebPageSchema } from "@/lib/seo";
@@ -22,14 +23,7 @@ export const metadata: Metadata = buildPageMetadata({
   path: "/cheats/",
   imageAlt: "Hunt Showdown cheat suite — all features",
   imagePath: "/images/hunt/esp-overlay.png",
-  keywords: [
-    "Hunt Showdown cheats",
-    "Hunt Showdown ESP cheat",
-    "Hunt Showdown aimbot cheat",
-    "Hunt Showdown wallhack cheat",
-    "Hunt Showdown radar cheat",
-    "buy Hunt Showdown cheats",
-  ],
+  keywords: [...CHEATS_HUB_KEYWORDS],
 });
 
 export default function CheatsIndexPage() {

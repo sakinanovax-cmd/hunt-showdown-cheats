@@ -19,7 +19,7 @@ export default function HeroCheatPreview() {
           <span className="hero-cheat-dot hero-cheat-dot-red" />
           <span className="hero-cheat-dot hero-cheat-dot-gold" />
           <span className="hero-cheat-dot hero-cheat-dot-green" />
-          <span className="font-mono-label ml-auto text-[var(--color-text-muted)]">Zadeyo Overlay</span>
+          <span className="font-mono-label ml-auto text-[var(--color-text-muted)]">ESP Overlay</span>
         </div>
 
         <div className="hero-cheat-viewport">

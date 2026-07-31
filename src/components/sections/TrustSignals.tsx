@@ -27,9 +27,7 @@ export default function TrustSignals() {
                   className="text-[var(--color-purple-light)] underline-offset-2 hover:underline"
                   rel="noopener noreferrer"
                   target="_blank"
-                >
-                  Zadeyo
-                </a>
+                >Hunt Showdown Cheats</a>
                 . We document features and pricing for buyers; we do not claim ownership of Crytek&apos;s game IP.
               </p>
             </div>
@@ -56,7 +54,7 @@ export default function TrustSignals() {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  Zadeyo order page
+                  your order page
                 </a>
                 . Need help? Contact{" "}
                 <a
@@ -65,7 +63,7 @@ export default function TrustSignals() {
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  Zadeyo support
+                  24/7 support
                 </a>
                 .
               </p>

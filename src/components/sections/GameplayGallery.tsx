@@ -25,7 +25,7 @@ export default function GameplayGallery() {
             <p className="ref-section-title">Hunt Showdown — Real Gameplay</p>
           </div>
           <p className="prose-body mx-auto mt-6 max-w-2xl">
-            Bayou atmosphere, ESP overlays, and the kind of hunter awareness Zadeyo cheats are built for.
+            Bayou atmosphere, ESP overlays, and the kind of hunter awareness Hunt Showdown cheats are built for.
           </p>
         </div>
 

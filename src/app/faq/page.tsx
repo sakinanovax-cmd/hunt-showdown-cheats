@@ -22,9 +22,9 @@ export const metadata: Metadata = buildPageMetadata({
   imageAlt: "Hunt Showdown cheats FAQ — price, ESP, aimbot and safety",
   keywords: [
     "Hunt Showdown cheats FAQ",
-    "Hunt Showdown cheat price",
-    "Hunt Showdown ESP safe",
-    "Cloud DMA Hunt Showdown",
+    "Hunt Showdown anti-cheat bypass",
+    "buy Hunt Showdown cheats",
+    "Hunt Showdown ESP",
   ],
 });
 
@@ -80,7 +80,7 @@ export default function FaqPage() {
               Ready to buy?
             </h2>
             <p className="prose-body mx-auto mb-6 max-w-xl">
-              Browse every cheat feature, compare plans, or checkout on Zadeyo for instant loader delivery.
+              Browse every cheat feature, compare plans, or checkout online for instant loader delivery.
             </p>
             <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
               <PurchaseButton>Buy Hunt Showdown Cheats</PurchaseButton>
